@@ -1,0 +1,12 @@
+<div class="cpss_classlearn_layout mt20 clearfix">
+    <div id="switch_schedule_detail" class="teb_title_v5">
+        <p class="{{#if_eq current 'learn'}}current_teb_v5{{else}}color_333{{/if_eq}} ml20 mr20" data-cate="learn">课程</p>
+        <p class="{{#if_eq current 'exercise'}}current_teb_v5{{else}}color_333{{/if_eq}} ml20 mr20" data-cate="exercise">做题</p>
+        <p class="{{#if_eq current 'datum'}}current_teb_v5{{else}}color_333{{/if_eq}} ml20 mr20" data-cate="datum">资料</p>
+        <p class="{{#if_eq current 'report'}}current_teb_v5{{else}}color_333{{/if_eq}} ml20 mr20 google_event" data-cate="report" ga-type="点击报告">报告</p>
+        {{#if_eq live '1'}}
+        <p id="new_help" class="{{#if_eq current 'guide'}}new_help_current{{else}}new_help{{/if_eq}} google_event" data-cate="guide" ga-type="新手指南">新手指南</p>
+        {{/if_eq}}
+    </div>
+    <div id="schedule_detail_list"></div>
+</div>

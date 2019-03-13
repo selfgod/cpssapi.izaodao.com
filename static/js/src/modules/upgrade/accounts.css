@@ -1,0 +1,340 @@
+@charset "UTF-8";
+h3 {
+  font-size: 18px;
+  font-weight: normal;
+}
+input {
+  font-family:"Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.container {
+  width: 100%;
+  height: auto;
+  background-color: #f5f5f5;
+  color: #333;
+}
+.main {
+  width: 1040px;
+  height: auto;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff;
+}
+.main .main_content {
+  width: 100%;
+  height: 210px;
+}
+.main .main_support {
+  width: 100%;
+  padding-bottom: 5px;
+}
+.main .main_content .main_content_img {
+  float: left;
+}
+.main .main_content .main_content_txt {
+  float: left;
+  width: 560px;
+  height: 180px;
+}
+ .main .main_content .main_content_txt span:first-child {
+  width: 70px;
+  display: inline-block;
+}
+.main .main_content .main_content_price {
+  float: left;
+  width: 160px;
+  height: 180px;
+}
+.main .main_support .main_support_view {
+  width: 100%;
+  height: auto;
+}
+.main .main_support .main_support_block {
+  float: left;
+  width: 494px;
+  height: 120px;
+  background-color: #fcfcfc;
+  border: 2px solid #f5f5f5;
+}
+.main .main_price {
+  width: 510px;
+  position: relative;
+}
+.main .main_price .main_price_null {
+  width: 300px;
+  margin: 70px auto 40px;
+  text-align: center;
+}
+.main .main_price p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 30px;
+
+}
+.main .main_price p:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.main .main_price p{clear:both;display:block}
+.main .main_price p.taR {
+  padding-right: 15px;
+
+}
+.main .main_price p span {
+  float: left;
+  width: 100px;
+}
+.main .main_price p i {
+  float: left;
+  width: 300px;
+  font-style: normal;
+  color: #888;
+}
+.main .main_price p i img {
+  margin-top: 8px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+.main .main_price p b {
+  float: left;
+  width: 95px;
+  text-align: right;
+  color: #fc7e03;
+  padding-right: 15px;
+
+}
+.main .main_price p.color_ff0000 {
+  position: absolute;
+  right:0;
+  padding-right: 0;
+  width: 220px;
+  text-align: center;
+}
+.main .main_price p select {
+  width: 220px;
+  height: 30px;
+  color: #666;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+.main .main_price p input[type="text"] {
+  width: 210px;
+  height: 24px;
+  line-height: 24px;
+  padding: 2px 4px;
+  color: #ccc;
+  font-size: 12px;
+  border: 1px solid #c5c5c5;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+.main .main_price p input[type="checkbox"] {
+  position: relative;
+  top: 2px;
+  right: 4px;
+  vertical-align: baseline;
+}
+ .main .main_price p input[type="text"].error {
+  border:1px solid #ff0000;
+}
+.main .main_update {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: #fcfcfc;
+  color: #666;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #e5e5e5; 
+}
+.main .main_update.current {
+  color: #fc7e03;
+  border: 2px solid #fc7e03;
+}
+.main .main_update img {  
+  margin: 20px;
+}
+.main .main_update i {
+  font-style: normal;
+}
+.main .update_th {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  color: #333;
+  font-size: 14px;
+}
+.main .update_td {
+  margin-bottom: 10px;
+  width: 100%;
+  min-height: 120px;
+  line-height: 1.7;
+  color: #666;
+  font-size: 14px;
+  border: 1px solid #e5e5e5;
+  background-color: #fcfcfc;
+}
+.main .update_td select{
+  margin: 14px 0 8px;
+  width: 300px;
+  height: 38px;
+  color: #666;
+  border: 1px solid #d5d5d5;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+.main .update_td .flL b{
+  font-weight: normal;
+  color: #666;
+}
+.main .update_td.current {
+  border: 2px solid #fc7e03;
+}
+.main .update_btn {
+  display: block;
+  margin: 0 auto;
+  width: 140px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #ccc;
+  border: 0;
+  color: #fff;
+  font-size: 16px;
+  font-family:"Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  text-align: center;
+}
+.main .update_btn.change-yellow {
+  cursor: pointer;
+  background-color: #fc7e03;
+}
+.main .update_btn.change-yellow:hover {
+  background-color: #feb205;
+}
+.main .update_table {
+  width: 100%;
+  margin: 20px 0;
+  color: #666;
+  font-size: 14px;
+  border: 1px solid #e5e5e5;
+}
+.main .update_table thead tr th{
+  height: 40px;
+  line-height: 40px;
+  padding-left: 10px;
+  text-align: left;
+  font-weight: normal;
+  border-right: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  background-color: #f5f5f5;
+}
+.main .update_table tbody tr td{
+  height: 40px;
+  line-height: 40px;
+  padding-left: 10px;
+  border-right: 1px solid #e5e5e5;  
+  background-color: #fcfcfc;
+}
+.main .update_table tbody tr:first-child td{
+  border-bottom: 1px solid #e5e5e5;
+  
+}
+.main .update_table tbody tr td:first-child {
+  text-align: center;
+  padding-left: 0;
+}
+.main .update_table thead tr th:last-child,.main .update_table tbody tr td:last-child {
+  border-right: 0;
+}
+.main .update_table>tbody>tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+.detail_bg {
+  position: relative;
+  top: 50px;
+  left: -30px;
+}
+
+/*弹层样式修改*/
+
+body .demo {
+  margin-left: -10px;
+}
+body .demo-class {
+  margin-left: -20px;
+}
+body .demo-class1 {
+  margin-left: -10px;
+}
+body .demo-class2 {
+  margin-left: -18px;
+}
+body .demo .layui-layer-content,body .demo-class .layui-layer-content ,body .demo-class1 .layui-layer-content,body .demo-class2 .layui-layer-content {
+  color: #333;
+  background-color: #f5f5f5;
+  border: 1px solid #c8c8c8;
+ 
+}
+body .demo .layui-layer-content img {
+  position: relative;
+  top: 26px;
+  left: -90px;
+}
+body .demo-class .layui-layer-content img {
+  position: relative;
+  top: -33px;
+  left: -133px;
+}
+body .demo-class1 .layui-layer-content img {
+  position: relative;
+  top: 27px;
+  left: -122px;
+}
+body .demo-class2 .layui-layer-content img {
+  position: relative;
+  top: -55px;
+  left: -142px;
+}
+body .demo-class1 .layui-layer-content b ,body .demo-class2 .layui-layer-content b {
+  font-weight:  normal;
+  color: #fc7e03;
+}
+
+input::-webkit-input-placeholder { /* WebKit browsers */
+  color: #cccccc;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #cccccc;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+  　　color: #cccccc;
+}
+
+input:-ms-input-placeholder { /* Internet Explorer 10+ */
+  　　color: #cccccc;
+}
+
+/*btn样式*/
+.signUp.yellow {
+  cursor: pointer;
+  background: #fc7e03 url(./img/eresize.png) no-repeat 180px 16px;
+}
+.signUp {
+  width: 220px;
+  height: 50px;
+  line-height: 48px;
+  color: #fff;
+  font-size: 24px;
+  border-radius: 3px;
+  display: block;
+  text-align: center;
+  cursor: default;
+  background: #d5d5d5;
+  float: right;
+}
+a.signUp.yellow:hover {
+  color: #fff;
+  background-color: #feb205;
+}

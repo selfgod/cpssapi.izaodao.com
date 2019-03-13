@@ -1,0 +1,7 @@
+{{#each questions}}
+    <div class="ykyc_v4_answer_ka_review">
+        {{#each this}}
+            <a class="datika fl {{#if answer}}{{#if_eq status '1'}}now_choose{{else}}wrong fl{{/if_eq}}{{/if}}" id="card_{{id}}" href="#q_{{id}}">{{index}}</a>
+        {{/each}}
+    </div>
+{{/each}}

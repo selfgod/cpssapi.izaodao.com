@@ -1,0 +1,39 @@
+{{#each data}}
+    <div class="wap_cpss_main clearfix pl25 pr25">
+        <h2>{{name}}</h2>
+        <p class="wap_cpss_tips wap_cpss_icon_date">上课日期：{{class_date}}</p>
+        <p class="wap_cpss_tips wap_cpss_icon_time">上课时间：{{class_time_d }}<b
+                class="wap_cpss_textR">{{ class_time_t }}</b></p>
+        <p class="wap_cpss_tips wap_cpss_icon_teacher">主讲老师：{{teachers.0.name }}老师<i
+                class="wap_cpss_icon_teacherImg"><img src="{{teachers.0.avatar }}" alt=""></i></p>
+        <div class="wap_cpss_bar flL">
+            <span><img src="../images/wap_cpss_bar_left.png" alt=""></span>
+            <div class="wap_cpss_bar_bg">
+                <p class="wap_cpss_bar_textL">上课进度</p>
+                <span class="wap_cpss_bar_ov" style="width: {{rate_of_progress.finish_percent}}%;">
+                    {{#if rate_of_progress.stick_flag}}
+                        <i class="wap_cpss_end"><img src="../images/wap_cpss_end.png" alt=""></i>
+                    {{/if}}
+                </span>
+                <p class="wap_cpss_bar_total">共计课时</p>
+                <p class="wap_cpss_bar_textR"><b
+                        class="color_ff761a">{{rate_of_progress.finish_num}}</b>/{{rate_of_progress.total_num}}</p>
+            </div>
+            <span class="wap_cpss_bar_right">
+                {{#if rate_of_progress.finish_flag}}
+                    <img src="../images/wap_cpss_bar_right_02.png" alt="">
+                {{else}}
+                    <img src="../images/wap_cpss_bar_right.png" alt="">
+                {{/if}}
+            </span>
+        </div>
+        {{#if begin_study}}
+            <a data-link="#schedule"
+               class="wap_cpss_button curP flR {{prompt_color}} mt07 show_schedule link">{{prompt_button}}</a>
+        {{else}}
+            <a href="javascript:;" data-schedule_id="{{id}}" data-plan_id="{{plan_id}}"
+               data-plan_stage_id="{{plan_stage_id}}"
+               class="wap_cpss_button flR curP {{prompt_color}} mt07 join_class">{{prompt_button}}</a>
+        {{/if}}
+    </div>
+{{/each}}

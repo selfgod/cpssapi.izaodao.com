@@ -1,0 +1,27 @@
+<div class="grade_alert">
+    <p class="fz16 color_333 taC mb30">申请调级</p>
+    <div class="grade_form clearfix">
+        <p class="grade_form_title mt20">调级原因<b class="color_ff4a4a">*</b></p>
+        <span class="flL ml05">
+            <textarea name="reason" cols="" rows="" placeholder="请用至少20个汉字，描述以往学习经历、及调级原因。" id="reason" maxlength="100"></textarea>
+            <p class="fz14 color_ff4a4a mt05 error_msg"></p>
+        </span>
+    </div>
+    <div class="grade_form clearfix">
+        <p class="grade_form_title mt08">期望级别<b class="color_ff4a4a">*</b></p>
+        <span class="flL ml05">
+            <select name="grade_id" id="grade_id">
+                 <option value="0">请选择</option>
+                {{#each list}}
+                {{#each this}}
+                    {{#if_eq current 0}}
+                     <option value="{{grade_id}}">LV.{{grade_id}}</option>
+                    {{/if_eq}}
+                {{/each}}
+            {{/each}}
+            </select>
+            <p class="fz14 color_ff4a4a mt05 error_msg_level"></p>
+        </span>
+    </div>
+    <a href="javascript:void (0);" class="grade_alert_btn applySubmit">提交</a>
+</div>

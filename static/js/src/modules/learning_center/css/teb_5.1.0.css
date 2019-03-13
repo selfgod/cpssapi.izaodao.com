@@ -1,0 +1,73 @@
+@charset "UTF-8";
+/**************************************************************************
+  teb_5.1.0.css
+
+  主修，选修等导航切换
+ *************************************************************************/
+.cpss_sideBar{
+    width:960px;
+}
+
+.cpss_sideBar ul{
+    width:960px;
+    height:50px;
+    position: relative;
+    background-color: #eee;
+}
+
+.cpss_sideBar li{
+    width:110px;
+    height:50px;
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    line-height: 48px;
+    position: absolute;
+    margin-right: 10px;
+    padding-left: 30px;
+    cursor: pointer;
+    left: 0;
+    -moz-user-select: none; /*火狐*/
+    -webkit-user-select: none; /*webkit浏览器*/
+    -ms-user-select: none; /*IE10*/
+    -khtml-user-select: none; /*早期浏览器*/
+    user-select: none;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+
+
+}
+
+.cpss_sideBar li:hover{
+    color: #3399ff;
+}
+
+.cpss_sideBar li.off{
+    width:110px;
+    height:51px;
+    color: #3399ff;
+    cursor: default;
+    z-index: 999;
+    background-position: 0px -50px !important;
+}
+
+.cpss_sideBar li.cpss_sideBar_icon_01_ov{
+    background: #fff url("img/cpss_sideBar_icon_01.png") no-repeat 0 top;
+}
+
+.cpss_sideBar li.cpss_sideBar_icon_02_ov{
+    background: #fff url("img/cpss_sideBar_icon_02.png") no-repeat 0 top;
+}
+
+.cpss_sideBar li.cpss_sideBar_icon_03_ov{
+    background: #fff url("img/cpss_sideBar_icon_03.png") no-repeat 0 top;
+}
+
+.cpss_sideBar li.cpss_sideBar_icon_04_ov{
+    background: #fff url("img/cpss_sideBar_icon_04.png") no-repeat 0 top;
+}
+
+.cpss_sideBar li.cpss_sideBar_icon_05_ov{
+    background: #fff url("img/cpss_sideBar_icon_05.png") no-repeat 0 top;
+}
+

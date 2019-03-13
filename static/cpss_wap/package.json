@@ -1,0 +1,35 @@
+{
+  "name": "cpss_wap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --progress --colors",
+    "release": "webpack --progress --colors",
+    "watch": "webpack --progress --colors --watch --config ./webpack.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "clipboard": "^1.6.1",
+    "css-loader": "^0.25.0",
+    "eslint": "^3.9.1",
+    "eslint-config-airbnb-base": "^9.0.0",
+    "eslint-loader": "^1.6.0",
+    "eslint-plugin-import": "^2.0.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "handlebars": "^4.0.6",
+    "handlebars-loader": "^1.5.0",
+    "html-webpack-plugin": "^2.24.1",
+    "jquery": "^3.2.1",
+    "lodash": "^4.16.6",
+    "source-map-loader": "^0.2.0",
+    "style-loader": "^0.13.1",
+    "underscore-template-loader": "^0.7.3",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.2",
+    "webpack-fail-plugin": "^1.0.6"
+  }
+}

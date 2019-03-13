@@ -1,0 +1,596 @@
+@charset "UTF-8";
+/**************************************************************************
+  cpss_major_v5.css
+ *************************************************************************/
+a.cpss_btn_strat {
+    width: 135px;
+    height: 40px;
+    display: block;
+    margin: auto;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+.cpss_leave_button {
+    width: 105px;
+    height: 40px;
+    margin: 20px auto;
+    color: #fff;
+    line-height: 40px;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    background-color: #fc7e03;
+}
+
+/**************************************************************************
+  主修课--我的课表
+ *************************************************************************/
+.cpss_info_mian {
+    width: 818px;
+    min-height: 868px;
+    border-radius: 5px;
+    padding-top: 35px;
+    margin: 1px auto 0px auto;
+}
+
+/*.cpss_info_mian p{*/
+/*line-height: 45px;*/
+/*}*/
+
+.myclass_major_v5 {
+    padding-top: 50px;
+}
+
+.myclass_major_title_v5 {
+    display: block;
+    line-height: 60px;
+    background-color: #fafafa;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.myclass_major_title_v5 p {
+    float: left;
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+}
+
+.myclass_major_line_v5 {
+    padding: 20px 0px;
+    vertical-align: middle;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.myclass_major_line_v5 p {
+    float: left;
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+}
+
+.qq_v5 {
+    width: 110px;
+    height: 20px;
+    margin-top: 20px;
+    font-size: 12px;
+    text-align: center;
+    padding-left: 9px;
+    background: url("img/qq_v5.png") no-repeat 0px 0px;
+}
+
+/*.qq_v5:hover{
+    color:#3399ff;
+    text-decoration:underline;
+    background: url("img/qq_v5.png") no-repeat 0px -29px;
+}*/
+
+/*********************************************************************************************************
+ 迭代 v5.1.0
+ *************************************************************************************************/
+.teb_title_v5 {
+    width:900px;
+    margin: 30px auto 12px auto;
+    text-align: center;
+}
+
+.teb_title_v5 p {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    font-size: 16px;
+    color: #999;
+    margin: 0px 20px 10px 20px;
+    cursor: pointer;
+    height: 35px;
+    -moz-user-select: none; /*火狐*/
+    -webkit-user-select: none; /*webkit浏览器*/
+    -ms-user-select: none; /*IE10*/
+    -khtml-user-select: none; /*早期浏览器*/
+    user-select: none;
+
+}
+
+.teb_title_v5 p:hover {
+    color: #3399ff!important;
+
+}
+.teb_title_v5 p.current_teb_v5 {
+    height: 28px;
+    color: #3399ff;
+    cursor: default;
+    border-bottom: 3px solid #3399ff;
+}
+
+.cpss_info_item {
+    width: 600px;
+    margin: auto;
+    padding-top: 55px;
+}
+
+.cpss_info_item ul {
+    width: 560px;
+    height: 300px;
+    margin: 0px auto;
+    position: relative;
+    border: 2px dotted #f6daa9;
+}
+
+.cpss_info_item ul li {
+    width: 140px;
+    position: absolute;
+}
+
+.cpss_info_item ul li span {
+    display: block;
+}
+
+.cpss_info_item ul li span.cpss_info_roundImg img {
+    width: 140px;
+    height: 140px;
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+.line_top {
+    width: 465px;
+    display: block;
+    position: absolute;
+    border-top: 2px dotted #f6daa9;
+}
+
+.cpss_info_item ul li.cpss_info_item_before {
+    position: absolute;
+    left: 100px;
+    margin-left: -70px;
+    margin-top: -70px;
+}
+
+.cpss_info_item ul li .cpss_cup_bg {
+    width: 128px;
+    height: 57px;
+    position: absolute;
+    left: 50%;
+    margin-left: -64px;
+    margin-top: -25px;
+    text-align: center;
+    background: url("img/cpss_cup_bg.png") no-repeat;
+}
+
+.cpss_info_item ul li .cpss_cup_bg span {
+    display: inline-block;
+
+}
+
+.cpss_cup_open {
+    width: 28px;
+    height: 32px;
+    margin-top: 15px;
+    background: url("img/cpss_cup.png") no-repeat 0px top;
+}
+
+.cpss_cup_text {
+    width: 140px;
+    font-size: 16px;
+    color: #333;
+    margin-top: 35px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cpss_cup_text b {
+    color: #fff;
+    font-size: 12px;
+    padding: 0px 5px 1px 5px;
+    margin-right: 5px;
+    background-color: #4bb866;
+}
+
+.cpss_info_item ul li.cpss_info_item_after {
+    position: absolute;
+    right: 100px;
+    margin-right: -70px;
+    margin-top: -70px;
+    z-index: 99;
+}
+
+.cpss_lock {
+    width: 51px;
+    height: 51px;
+    display: block;
+    position: absolute;
+    top: 73px;
+    right: -13px;
+    z-index: 77;
+    padding: 7px;
+}
+
+.cpss_lock:hover .cpss_lock_tips {
+    display: block;
+}
+
+.cpss_lock_tips {
+    width: 155px;
+    height: 50px;
+    color: #fff;
+    left: 60px;
+    top: 0px;
+    display: none;
+    font-size: 12px;
+    position: absolute;
+    font-style: normal;
+    padding: 8px 0px 10px 20px;
+    background: url("img/cpss_lock_tips_bg.png") no-repeat;
+}
+
+.disabled_lock {
+    background: url("img/cpss_disable_lock.png") no-repeat;
+}
+
+.cpss_cup_disabled {
+    width: 28px;
+    height: 28px;
+    margin-top: 19px;
+    background: url("img/cpss_cup.png") no-repeat 0px bottom;
+}
+
+.zInde_99 {
+    z-index: 99 !important;
+}
+
+.avatar_lock {
+    background: url("img/cpss_avatar_lock.png") no-repeat;
+}
+
+.avatar_lock img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.line_center {
+    width: 366px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -183px;
+    border-top: 2px dotted #f6daa9;
+}
+
+.right00 {
+    right: 0px !important;
+}
+
+.left00 {
+    left: 0px !important;
+}
+
+/*********************************************************************************************************
+ 迭代 v5.1.0
+ *************************************************************************************************/
+.success_alert_button_v5 {
+    width: 300px;
+    margin: 30px auto;
+    display: block;
+}
+
+.continue_v5,
+.schedule_btn_v5 {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    line-height: 38px;
+}
+
+.continue_v5 {
+    width: 134px;
+    height: 38px;
+}
+
+.schedule_btn_v5 {
+    width: 134px;
+    height: 38px;
+    margin-left: 5px;
+}
+
+.line_small {
+    width: 100px;
+    display: block;
+    position: absolute;
+    border-top: 2px dotted #f6daa9;
+}
+
+/*************************************************************************************************************
+ 新迭代  我要选课—主修课——阶段图标划过提示
+ ********************************************************************************************/
+.cpss_info_item ul li:hover .cpss_list_mask {
+    display: block;
+}
+
+.cpss_list_mask {
+    width: 130px;
+    height: 40px;
+    position: absolute;
+    left: -10px;
+    bottom: 25px;
+    z-index: 99;
+    background-color: #000;
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+    border-radius: 3px;
+    padding: 10px 15px;
+    line-height: 18px;
+    display: none;
+}
+
+.cpss_list_mask p {
+    font-size: 12px;
+    color: #fff;
+}
+
+.forbid_lock {
+    background: url("img/cpss_forbid_lock.png") no-repeat;
+}
+.cpss_layout {
+    width: 960px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 0!important;
+}
+.myclass_major_list_v5 {
+    position: relative;
+}
+.myclass_major_plan {
+    position: absolute;
+    left: 30px;
+    width: 50px;
+    height: 50px;
+    float: left;
+    font-size: 12px!important;
+    text-align: center;
+    padding: 10px 20px 5px 0px;
+}
+.myclass_major_plan .circleChart_text {
+    color: #3399ff;
+    font-size: 12px!important;
+}
+.myclass_major_plans {
+    width: 70px;
+    height: 70px;
+    float: left;
+    padding: 5px 20px 5px 0px;
+}
+.myclass_major_plans .circleChart_text {
+    color: #3399ff;
+    font-size: 14px!important;
+}
+
+.myclass_major_course {
+    width: 100%;
+    float: left;
+    position: relative;
+    font-size: 12px;
+
+}
+.myclass_container {
+    width: 800px;
+    margin-left: 100px;
+    height: 69px;
+    padding: 25px 0px;
+    border-bottom: 1px solid #f5f5f5;
+}
+.myclass_major_course:hover {
+    background-color: #fafafa;
+}
+.myclass_major_course_qq {
+    width: 85px;
+}
+
+.myclass_major_title_v5 p {
+    float: left;
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+    line-height: 18px;
+    margin-top: 15px;
+}
+
+.myclass_major_course_action {
+    width: 305px;
+    text-align: right;
+    float: right;
+    margin-top: 17px;
+}
+
+.myclass_major_course_action p,
+.myclass_major_course_action a {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    margin-right: 20px;
+    font-size: 12px;
+}
+
+.exercise_ov,
+.exercise_off {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    margin-right: 03px;
+    background: url("img/cpss_icon_03.png") no-repeat 0px 0px;
+}
+
+.exercise_off {
+    background: url("img/cpss_icon_03.png") no-repeat -18px 0px;
+}
+
+.material_ov {
+    width: 13px;
+    height: 16px;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    margin-right: 03px;
+    background: url("img/cpss_icon_03.png") no-repeat -72px 0px;
+}
+
+.myclass_major_course_action i,
+.myclass_major_course_action b {
+    vertical-align: middle
+}
+
+.myclass_major_course_btn {
+    width: 70px;
+    height: 30px;
+    line-height: 29px;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 3px;
+    text-align: center;
+    background-color: #3399ff;
+}
+
+.myclass_major_course_disable_btn {
+    width: 80px;
+    height: 35px;
+    line-height: 34px;
+    font-size: 14px;
+    color: #aaa;
+    border-radius: 3px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.myclass_major_course_btn:hover {
+    background-color: #0087f5;
+}
+
+.myclass_major_line_v5 {
+    padding: 20px 0px;
+    vertical-align: middle;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.myclass_major_line_v5 p {
+    float: left;
+    font-size: 14px;
+    border-radius: 3px;
+    color: #999;
+    text-align: center;
+    background-color: #3399ff;
+}
+
+.myclass_major_delete {
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    right: 30px;
+    top: 46px;
+    display: none;
+    cursor: pointer;
+    background: url("img/cpss_icon_03.png") no-repeat -104px -20px;
+}
+
+.myclass_major_delete:hover {
+    background: url("img/cpss_icon_03.png") no-repeat -104px -45px;
+}
+
+.myclass_major_course:hover .myclass_major_delete {
+    display: block;
+}
+
+.myclass_major_course_title {
+    width: 400px;
+    float: left;
+    padding-left: 05px;
+}
+
+.myclass_major_course_qq {
+    width: 85px;
+    float: left;
+    text-align: center;
+    color: #aaa;
+    line-height: 18px;
+    margin-top: 17px;
+}
+
+
+
+.cpss_search_none {
+    padding-top: 150px;
+    text-align: center;
+}
+.cpss_search_none img {
+    display: inline-block;
+    width: 60px;
+    height: auto;
+    margin-bottom: 30px;
+}
+.cpss_search_none h3 {
+    color: #333;
+    font-size: 16px;
+    font-weight: normal;
+}
+.cpss_search_none h4 {
+    margin-top: 15px;
+    color: #999;
+    font-size: 12px;
+    font-weight: normal;
+}
+.cpss_search_none p {
+    color: #aaa;
+    font-size: 16px;
+}
+.cpss_search_none .blue {
+    color: #3399ff!important;
+}
+.cpss_search_none span {
+    margin: 0 5px;
+}
+.cpss_search_none a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 0 20px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #3399ff;
+    text-decoration: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.cpss_search_none a:hover {
+    background-color: #0087f5;
+}

@@ -1,0 +1,529 @@
+@charset "UTF-8";
+/*******************************************************************
+ classlearn.css
+ *******************************************************************/
+
+.cpss_classlearn_layout{
+    width: 920px;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 20px;
+}
+.cpss_classlearn_layout.mt20{
+    min-height: 630px;
+    width: 960px;
+    padding: 30px 0 40px;
+}
+.cpss_classlearn_right{
+    float: left;
+    width: 820px;
+}
+
+.cpss_icon_time{
+    width: 15px;
+    height: 18px;
+    margin-right: 05px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(img/cpss_icon_03.png) no-repeat -21px -20px;
+}
+
+.cpss_icon_teacher{
+    width: 17px;
+    height: 18px;
+    margin-right: 05px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(img/cpss_icon_03.png) no-repeat 0px -20px;
+}
+
+.cpss_icon_qq{
+    width: 19px;
+    height: 18px;
+    margin-right: 05px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(img/cpss_icon_03.png) no-repeat -40px -20px;
+}
+
+.cpss_icon_book{
+    width: 17px;
+    height: 16px;
+    margin-right: 05px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(img/cpss_icon_03.png) no-repeat -62px -20px;
+}
+
+.cpss_icon_reform{
+    width: 20px;
+    height: 19px;
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(img/cpss_icon_03.png) no-repeat -50px -41px;
+}
+
+.cpss_icon_medal_ov,
+.cpss_icon_medal_off{
+    width: 19px;
+    height: 23px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.cpss_icon_medal_ov{
+    background: url(img/cpss_icon_03.png) no-repeat 0px -39px;
+}
+
+.cpss_icon_medal_off{
+    background: url(img/cpss_icon_03.png) no-repeat -24px -39px;
+}
+
+a.link_text{
+    color: #aaa;
+    font-size: 12px;
+    margin-right: 20px;
+}
+
+a.link_text:hover{
+    color: #3399ff;
+}
+
+.cpss_classlearn_line p{
+    height:20px;
+    font-size: 12px;
+    color: #aaa;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 25px;
+}
+.ul_list_container {
+    width: 900px;
+    height: 50px;
+    margin: 0 auto;
+    border-bottom: 1px solid #f8f8f8;
+}
+.ul_datum_container {
+    width: 900px;
+    height: 56px;
+    margin: 0 auto;
+    padding: 16px 0;
+    border-bottom: 1px solid #eee;
+}
+.cpss_container {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.cpss_classlearn{
+
+}
+
+.cpss_classlearn li{
+    height:49px;
+}
+
+.cpss_classlearn li:hover{
+    background-color: #fafafa;
+}
+.cpss_classlearn li:hover .ul_list_container{
+    height: 48px;
+    border-bottom: 1px solid #fafafa;
+}
+.cpss_classlearn li .borT_f8f8f8{
+    border-top: 1px solid #f8f8f8;
+}
+
+.cpss_classlearn_honor{
+    width: 45px;
+    float: left;
+    display: block;
+    margin: 12px 30px 0px 0px;
+}
+
+.cpss_classlearn_honor p{
+    color: #ffbb33;
+    font-size: 14px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+}
+
+.cpss_classlearn_catalog b{
+    color: #999;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.cpss_classlearn_catalog{
+    width:320px;
+    line-height: 47px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    float: left;
+    font-size: 14px;
+}
+
+p.cpss_classlearn_techer{
+    width:145px;
+    font-size: 12px;
+    color: #aaa;
+    float: left;
+    padding-left: 20px;
+    line-height: 47px;
+    text-align: left;
+}
+
+.cpss_classlearn_operate{
+    width: 340px;
+    float: left;
+    margin-top: 10px;
+    text-align: right;
+}
+
+.btn_eee{
+    color: #999;
+    text-align: center;
+    border-radius: 3px;
+    font-size: 12px;
+    border: 1px solid #eee;
+    -moz-user-select: none; /*火狐*/
+    -webkit-user-select: none; /*webkit浏览器*/
+    -ms-user-select: none; /*IE10*/
+    -khtml-user-select: none; /*早期浏览器*/
+    user-select: none;
+    padding: 8px 10px;
+    cursor: default;
+}
+
+.cpss_icon_download_off{
+    width:14px;
+    height:15px;
+    vertical-align: middle;
+    display: inline-block;
+    background: url(img/cpss_icon_03.png) no-repeat -37px 0px;
+}
+
+.cpss_icon_download_ov{
+    width:14px;
+    height:15px;
+    vertical-align: middle;
+    display: inline-block;
+    background: url(img/cpss_icon_03.png) no-repeat -54px 0px;
+}
+
+.cpss_classlearn_operate p{
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.cpss_datum li{
+    width: 100%;
+
+}
+
+.cpss_datum li:hover{
+    background-color: #fafafa;
+}
+
+.cpss_datum_left{
+    width:70px;
+    float: left;
+    padding-right: 10px;
+    text-align: center;
+    border-right: 1px solid #eee;
+}
+
+.cpss_datum_left p{
+    color: #aaa;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.cpss_datum_title{
+    width:680px;
+    font-size: 14px;
+    color: #333;
+    float: left;
+    line-height: 56px;
+    margin-left:20px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+.cpss_small_btn {
+    display: inline-block;
+    width: 58px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    font-size: 12px;
+    color: #39f;
+    background-color: #fff;
+    cursor: pointer;
+    border: 1px solid #39f;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.cpss_large_btn {
+    display: inline-block;
+    width: 68px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+    color: #39f;
+    background-color: #fff;
+    border: 1px solid #39f;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.cpss_large_btn:hover,.cpss_large_btn.blue,.cpss_small_btn:hover,.cpss_small_btn.blue {
+    color: #fff;
+    background-color: #39f;
+    border: 1px solid #39f;
+}
+
+.cpss_large_btn.blue:hover,.cpss_small_btn.blue:hover {
+    background-color: #0087f5;
+    border: 1px solid #0087f5;
+}
+.cpss_large_btn.gray,.cpss_large_btn.gray:hover,.cpss_small_btn.gray {
+    cursor: default;
+    background-color: #fff;
+    color: #999;
+    border: 1px solid #eee;
+}
+.cpss_large_btn.dark,.cpss_large_btn.dark:hover,.cpss_small_btn.dark {
+    cursor: default;
+    background-color: #f5f5f5;
+    color: #aaaaaa;
+    border: 1px solid #f5f5f5;
+}
+.cpss_report_view {
+    margin: 70px auto 30px;
+    width: 460px;
+    height: 460px;
+}
+
+.cpss_report_view li {
+    float: left;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+
+.mr60 {
+    margin-right: 60px!important;
+}
+.cpss_report_view .circleChart_text{
+    position: relative;
+    line-height: 1!important;
+    margin-top: 65px!important;
+    font-size: 50px!important;
+    font-weight: bold!important;
+    font-family: Arial!important;
+
+}
+.cpss_report_view .circleChart_text em{
+    position: absolute;
+    margin-top: 10px;
+    left: 0;
+    right: 0;
+    line-height: 1!important;
+    font-size: 14px!important;
+    color: #999!important;
+    font-weight: normal!important;
+
+}
+#total_attendance .circleChart_text{
+    color: #3399ff!important;
+}
+#live_attendance .circleChart_text{
+    color: #66b3ff!important;
+}
+#test_finished .circleChart_text{
+    color: #46dd6b!important;
+}
+#unit_finished .circleChart_text{
+    color: #ffd300!important;
+}
+
+/*******************************************************************
+ classlearn.css  cpss_v5.3 迭代
+ *******************************************************************/
+
+.teb_title_v5 p.new_help,
+.teb_title_v5 p.new_help_current{
+    width:78px;
+    height:24px;
+    line-height: 24px;
+    text-align: center;
+    font-size: 14px;
+    padding-left: 20px;
+}
+
+.teb_title_v5 p.new_help{
+    color: #3399ff;
+    background: url("img/new_help_bg.png") no-repeat left;
+}
+
+.teb_title_v5 p.new_help:hover{
+    background: url("img/new_help_bg.png") no-repeat -98px 0px;
+}
+
+.teb_title_v5 p.new_help_current{
+    color: #fff;
+    cursor: auto;
+    background: url("img/new_help_bg.png") no-repeat right;
+}
+
+.teb_title_v5 p.new_help_current:hover{
+    color: #fff !important;
+}
+
+.cpss_help_icon{
+    width:60px;
+    height:60px;
+    display: block;
+    margin: auto;
+}
+
+.cpss_help_text{
+    width:760px;
+    margin: auto;
+}
+
+.cpss_help_text h1.cpss_help_h1{
+    width:760px;
+    height:34px;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 34px;
+    color: #3399ff;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.cpss_help_text h1.cpss_help_h1 p.cpss_help_line{
+    width:125px;
+    border-bottom: 1px solid #3399ff;
+}
+
+.cpss_help_text h1.cpss_help_h1 p.cpss_help_line i{
+    width: 16px;
+    height: 16px;
+    display: block;
+    font-style: normal;
+    color: #fff;
+    line-height: 15px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 12px;
+    float: left;
+    margin-top: 9px;
+    margin-right: 9px;
+    vertical-align: middle;
+    background-color: #3399ff;
+}
+
+.cpss_text_left p{
+    line-height: 24px;
+    font-size: 14px;
+    color: #333;
+}
+
+.code_text{
+    width:150px;
+    font-size:12px;
+    color: #999;
+    margin-top: 20px;
+    line-height: 22px;
+}
+
+a.qq_qun{
+    width:72px;
+    height:28px;
+    font-size: 12px;
+    color: #3399ff;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 35px;
+    line-height: 28px;
+    background: url("img/qq_qun.png") no-repeat 7px;
+}
+
+a.qq_qun:hover{
+    color: #fff;
+    border: 1px solid #3399ff;
+    background-color: #3399ff;
+}
+
+a.cpss_help_btn_line{
+    font-size: 12px;
+    text-align: center;
+    line-height: 28px;
+    color: #3399ff;
+    padding: 0px 10px;
+    border-radius: 3px;
+    border: 1px solid #3399ff;
+}
+
+a.cpss_help_btn_bg{
+    font-size: 12px;
+    text-align: center;
+    line-height: 28px;
+    color: #fff;
+    padding: 0px 10px;
+    border-radius: 3px;
+    border: 1px solid #3399ff;
+    background-color: #3399ff;
+}
+
+a.cpss_help_btn_bg:hover{
+    background-color: #0087f5;
+}
+
+
+a.cpss_help_btn_line:hover{
+    color: #fff;
+    border: 1px solid #3399ff;
+    background-color: #3399ff;
+}
+
+a.cpss_help_btn_hui{
+    font-size: 12px;
+    text-align: center;
+    line-height: 28px;
+    padding: 0px 10px;
+    background-color: #e5e5e5;
+    color: #aaaaaa;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    cursor: text;
+}
+
+a.cpss_help_timetable{
+    width:60px;
+    height:36px;
+    line-height: 36px;
+    display: block;
+    margin: 30px auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

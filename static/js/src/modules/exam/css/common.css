@@ -1,0 +1,223 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, select, blockquote, th, td，table {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-weight: normal;
+}
+
+body,html{
+    height:100%;
+}
+
+body {
+    height: 100%;
+    font-size: 12px;
+    font-family: 'microsoft yahei';
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 100%;
+    line-height: inherit;
+}
+
+caption, th {
+    text-align: left;
+}
+
+fieldset, img {
+    border: 0;
+    vertical-align: bottom;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*img {*/
+/*display: block;*/
+/*}*/
+
+abbr, acronym {
+    border: 0;
+    font-variant: normal;
+}
+
+:focus {
+    outline: 0;
+}
+
+address, button, caption, cite, code, dfn, input, optgroup, option, select, textarea, th, var {
+    font: inherit;
+}
+
+del, ins {
+    text-decoration: none;
+}
+
+ol, ul, dl {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+a, li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a img {
+    border: 0px;
+}
+
+.fl p {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.fl p img {
+    width: 666px;
+}
+
+.ykyc_v4_word1 p {
+    font-size: 16px !important;
+    color: #444 !important;
+}
+
+.ykyc_v4_word1 p img {
+    max-width: 700px;
+}
+
+/* 浮动及定位样式 */
+.fc:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.fc {
+    display: inline-block;
+    *zoom: 1;
+}
+
+/* Hides from IE-mac */
+* html .fc {
+    height: 1%;
+}
+
+.fc {
+    display: block;
+}
+
+/* End hide from IE-mac */
+.fl {
+    float: left;
+    display: inline;
+}
+
+.fl img {
+    display: inline;
+}
+
+.fr {
+    float: right;
+    margin-top: 24px !important;
+    margin-right: 20px !important;
+}
+
+.pos_a {
+    position: absolute;
+}
+
+.pos_f {
+    position: fixed !important;
+    top: 0;
+}
+
+.ykyc_v4_head {
+    width: 100%;
+    height: 70px;
+    background-color: #222222;
+    overflow: hidden;
+}
+
+.ykyc_v4_header, .exam_v4_navi, .ykyc_v4_con {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.ykyc_v4_headerlt {
+    font-size: 22px;
+    color: #fff;
+    line-height: 70px;
+}
+
+/*#pc_200_footer_nav {*/
+    /*position: absolute;*/
+    /*bottom: 0px;*/
+/*}*/
+
+.exam_v4_notice {
+    width: 980px;
+    font-size: 14px;
+    color: #666;
+    line-height: 24px;
+    margin: 20px auto;
+}
+
+.ykyc_v4_con {
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+.exam_v4_result {
+    background-color: #fff;
+    border: 1px solid #dfe0e2;
+    width: 978px;
+    overflow: hidden;
+}
+
+.exam_v4_result p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #666;
+    margin-top: 16px;
+}
+
+.wrong {
+    background: url(./img/bt_bg5.jpg) no-repeat !important;;
+    color: #fff !important;;
+}
+
+.datika {
+    background: url(./img/bt_bg3.jpg) no-repeat;
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    color: #888888;
+    margin-right: 7px;
+    margin-bottom: 7px;
+    cursor: pointer;
+    font-family: Arial;
+}
+
+.now_choose {
+    background: url(./img/bt_bg2.jpg) no-repeat;
+    color: #fff;
+}
+
+.unit_enter_content {
+    min-height: 89%;
+}

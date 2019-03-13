@@ -1,0 +1,47 @@
+<h1 class="grade_text clearfix">等级说明</h1>
+<p class="fz14 color_666 taC">早道网校将日语课程内容分为<b class="color_ff7e00 ml05 mr05">9</b>个等级，报名后根据你的日语水平，划定学习等级</p>
+<p class="fz14 color_666 taC mt05">学完当前等级课程，通过等级测试，晋级到下一个等级</p>
+<p class="fz14 color_666 taC mt05"><b class="color_ff7e00 ml05 mr05">L1-L6</b>等级课程，主要培养语言基础知识；<b class="color_ff7e00 ml05 mr05">L7-L9</b>等级课程，根据学习目的，分方向学习</p>
+<ul class="level_list clearfix">
+    {{#each list}}
+        {{#each this}}
+        <li class="{{#if_eq @index 2}}mr00{{/if_eq}}">
+            <div class="level_bg {{#if_eq upgrade 1}} bg_fff7dd{{else}}bg_f8f8f8{{/if_eq}}">
+                <div><img src="{{gradeImg}}" alt=""></div>
+                <!--是当前等级并不是最大级-->
+                {{#if_cond current '===' 1}}
+                    {{#if_cond is_pass_max '===' 1}}
+                        <p>已通过</p>
+                    {{else}}
+                        <a href="#" class="toText" >升级测试</a>
+                    {{/if_cond}}
+                {{else}}
+                    <!--upgrade=1为已升级-->
+                    {{#if_eq upgrade 1}}
+                        <p>已通过</p>
+                    {{/if_eq}}
+                {{/if_cond}}
+                <!--<a href="#" class="toText">去测试</a>-->
+            </div>
+            <div class="level_list_off">
+                <p class="level_text_v530">{{{grade_desc}}}</p>
+                <!--未通过时显示-->
+                <!--当前等 级并不是最大级-->
+                {{#if_cond current '===' 1}}
+                    {{#if_cond is_pass_max '===' 1}}
+                        <!--<p>已通过</p>-->
+                    {{else}}
+                        <a href="/grade/notice" class="toText" >升级测试</a>
+                    {{/if_cond}}
+                {{else}}
+                    <!--upgrade=1 已升级-->
+                    {{#if_eq upgrade 0}}
+                        <p class="color_ff4a4a taC">{{#if_eq grade_id 1}}完成定级测试可解锁{{else}}通过L{{inc grade_id '-'}}等级测试可升级至该等级{{/if_eq}}</p>
+                    {{/if_eq}}
+                {{/if_cond}}
+            </div>
+
+        </li>
+        {{/each}}
+    {{/each}}
+</ul>

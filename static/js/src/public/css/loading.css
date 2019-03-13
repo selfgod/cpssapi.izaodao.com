@@ -1,0 +1,8 @@
+.cpss_loading {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    margin: -85px 0px 0px -15px;
+}

@@ -1,0 +1,582 @@
+@charset "UTF-8";
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+ul,
+ol {
+	list-style: none;
+}
+img {
+	border: none;
+	-webkit-touch-callout: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+address,
+em,
+code,
+cite,
+dfn,
+var,
+optgroup {
+	font-style: normal;
+}
+a {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	text-decoration: none;
+	outline: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+input,
+select {
+	vertical-align: middle;
+}
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+/* html
+-------------------------------------------------*/
+html,body { height: 100%;}
+
+html {
+	overflow-y: scroll;
+}
+/*  body  */
+body {
+	font-family: Helvetica;
+	font-size: 12px;
+	line-height: 1.4;
+	color: #000000;
+	-webkit-text-size-adjust: 100%;
+}
+
+h3{
+	font-size: 28px;
+	font-weight: normal;
+}
+
+/* content */
+#wap_cpss{
+	width:640px;
+	min-height: 100%;
+	padding-bottom: 180px;
+	background-color: #f5f5f5;
+}
+/* #wrapper */
+
+.wap_cpss_header{
+	width:640px;
+	height:80px;
+	border-top: 1px solid #d3d3d3;
+	border-bottom: 1px solid #d3d3d3;
+	background-color: #fff;
+}
+
+h1.wap_title{
+	width:540px;
+	font-size: 36px;
+	color: #444;
+	text-align: center;
+	font-weight: normal;
+	line-height: 78px;
+}
+
+.wap_cpss_iconR{
+	width:50px;
+	height:50px;
+	display: block;
+	float: right;
+	padding-top: 10px;
+	margin-top: 13px;
+	text-align: center;
+}
+
+.wap_cpss_main{
+	width:616px;
+	padding: 24px 13px;
+	margin:20px auto 0px auto;
+	background-color: #fff;
+	border-bottom: 1px solid #d2d2d2;
+}
+
+.wap_cpss_main h2{
+	font-size: 30px;
+	font-weight: normal;
+	color: #333;
+}
+
+.h2_icon{
+	font-size:24px;
+	color: #fff;
+}
+
+.wap_cpss_tips{
+	width:540px;
+	height:70px;
+	margin: 30px auto;
+	border-radius: 50px;
+	font-size: 26px;
+	color: #8c8c8c;
+	border: 1px #f0f0f0 solid;
+	padding-left: 65px;
+	line-height: 65px;
+}
+
+.wap_cpss_icon_date{
+	background: #f5f5f5 url("img/wap_cpss_icon_01.png") no-repeat 15px;
+}
+
+.wap_cpss_icon_time{
+	background: #f5f5f5 url("img/wap_cpss_icon_02.png") no-repeat 15px;
+}
+
+.wap_cpss_icon_teacher{
+	background: #f5f5f5 url("img/wap_cpss_icon_03.png") no-repeat 15px;
+}
+
+.wap_cpss_textR{
+	float: right;
+	font-size: 24px;
+	color: #ff7234;
+	margin-right: 10px;
+}
+
+.wap_cpss_icon_teacherImg{
+	width:56px;
+	height:56px;
+	margin: 6px 6px 0px 0px;
+	float: right;
+}
+
+.wap_cpss_icon_teacherImg img{
+	width:56px;
+	height:56px;
+	border-radius: 50%;
+}
+
+.wap_cpss_bar{
+	width: 360px;
+	margin-left: 10px;
+	position: relative;
+}
+
+.wap_cpss_bar span{
+	display: block;
+	float: left;
+}
+
+.wap_cpss_bar_bg{
+	width:350px;
+	height:62px;
+	position: relative;
+	background: url("img/wap_cpss_bar_off.png") repeat-x;
+}
+
+.wap_cpss_bar_right{
+	position: absolute;
+	right: -10px;
+	top:18px;
+	z-index: 99;
+}
+
+.wap_cpss_bar_ov{
+	height:62px;
+	display: block;
+	position: absolute;
+	left: 0px;
+	z-index: 99;
+	background: url("img/wap_cpss_bar_ov.png") repeat-x;
+}
+
+.wap_cpss_end{
+	position: absolute;
+	right:0px;
+}
+
+.wap_cpss_button{
+	width:140px;
+	height:50px;
+	border-radius: 5px;
+	font-size: 28px;
+	color: #fff;
+	text-align: center;
+	line-height: 45px;
+}
+
+.wap_cpss_bar_textL,
+.wap_cpss_bar_total,
+.wap_cpss_bar_textR{
+	position: absolute;
+	font-size: 20px;
+}
+
+.wap_cpss_bar_textL{
+	top:-5px;
+	left: 10px;
+	color: #ff7234;
+}
+
+.wap_cpss_bar_total{
+	bottom: -4px;
+	color: #333;
+	left: 10px;
+}
+
+.wap_cpss_bar_textR{
+	right:5px;
+	top:-5px;
+}
+
+.bg_1e93fa{ background-color: #1e93fa !important;}
+.bg_d2d2d2{ background-color: #d2d2d2 !important;}
+
+/*********************************************************************************************************************
+********* 课程表
+ **********************************************/
+.wap_schedule_title{
+	width:640px;
+	background-color: #fff;
+}
+
+.wap_cpss_title{
+	color: #1e93fa;
+	font-size: 30px;
+	font-weight:normal;
+	padding: 20px 0px;
+}
+
+.wap_schedule_day{
+	width:640px;
+	margin: auto;
+}
+
+.wap_schedule_day li{
+	width:72px;
+	height:85px;
+	float: left;
+	margin: 0px 10px 30px 10px;
+	text-align: center;
+}
+
+.wap_schedule_day li:last-child{
+	margin: 0px 0px 30px 10px;
+}
+
+.wap_schedule_day li p{
+	width:56px;
+	height:56px;
+	color: #333;
+	font-size: 28px;
+	line-height: 56px;
+	margin: 5px auto;
+}
+
+.wap_schedule_day li b{
+	color: #979797;
+	font-size: 18px;
+}
+
+.bg_img_ff7234{
+	color: #fff !important;
+	background: url("img/bg_img_ff7234.png") no-repeat;
+}
+
+.bg_img_ebebeb{
+	background: url("img/bg_img_ebebeb.png") no-repeat;
+}
+
+.wap_cpss_prompt{
+	width:640px;
+	height:54px;
+	font-size: 24px;
+	color: #ff7234;
+	text-align: center;
+	line-height: 50px;
+	border-bottom: 1px solid #ffdcc1;
+	border-top: 1px solid #ffe5d1;
+	background-color: #fff0e6;
+}
+
+.wap_cpss_list{
+	width:290px;
+	height:120px;
+	position: relative;
+	margin: 30px 0px 25px 0px;
+	border-radius: 3px;
+	border: 1px solid #f0f0f0;
+	background-color: #f5f5f5;
+}
+
+.wap_cpss_list i{
+	position: absolute;
+	left: -5px;
+	top:14px;
+}
+
+.wap_cpss_list_text{
+	width:250px;
+	font-size: 24px;
+	color: #8c8c8c;
+	margin: 15px 0px 0px 18px;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+
+a.wap_cpss_classroom_button{
+	width:90px;
+	height:90px;
+	font-size: 28px;
+	color: #fff;
+	border-radius: 50%;
+	line-height: 90px;
+	text-align: center;
+	display: block;
+	margin: auto;
+	background-color: #ff7234;
+}
+
+.wap_cpss_add{
+	width: 616px;
+	height:80px;
+	background-color: #fff;
+	font-size: 30px;
+	color: #1e93fa;
+	text-align: center;
+	line-height: 75px;
+	margin: 20px auto;
+	border-bottom: 1px solid #d2d2d2;
+}
+
+.wap_cpss_noClass{
+	padding-top: 30px;
+	text-align: center;
+}
+
+.wap_cpss_remind{
+	width:590px;
+	height: 120px;
+	font-size: 28px;
+	padding: 18px 30px;
+	margin: 45px 0px 10px 0px;
+	border-radius: 5px;
+	background-color: #f5f5f5;
+	border: 1px solid #f0f0f0;
+}
+
+.wap_cpss_remind p{
+	color: #979797;
+	float: left;
+	text-align: left;
+}
+
+.wap_cpss_end_btn{
+	width:590px;
+	height:80px;
+	color: #fff;
+	font-size: 28px;
+	line-height: 75px;
+	border-radius: 5px;
+	margin: 45px 0px 10px 0px;
+	background-color: #d2d2d2;
+	border: 1px solid #f0f0f0;
+}
+
+.color_1e93fa{ color: #1e93fa !important;}
+
+/****************************************************************************
+**  弹出层  ****************************
+***************************************************************/
+.wap_cpss_popup_bg{
+	width: 100%;
+	height: 100%;
+	opacity: 0.7;
+	position: fixed;
+	top:0px;
+	left: 0px;
+	z-index: 99;
+	background-color: #000;
+}
+
+.wap_cpss_popup_bg2{
+	width: 100%;
+	height: 100%;
+	opacity: 0.1;
+	position: fixed;
+	top:0px;
+	left: 0px;
+	z-index: 99;
+	background-color: #ffffff;
+}
+
+.wap_cpss_popup{
+	width:490px;
+	height:520px;
+	position: fixed;
+	top:50%;
+	left: 50%;
+	z-index: 999;
+	color: #333;
+	text-align: center;
+	margin: -260px 0px 0px -245px;
+	border-radius: 10px;
+	background-color: #fff;
+}
+
+.wap_cpss_popup span{
+	display: block;
+}
+
+.wap_cpss_popup p{
+	font-size: 28px;
+}
+
+.wap_cpss_close{
+	width:54px;
+	height:54px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	z-index: 9999;
+}
+
+.wap_cpss_password_btn{
+	width:320px;
+	height:70px;
+	color: #fff;
+	font-size: 30px;
+	border-radius: 50px;
+	line-height: 65px;
+	text-align: center;
+	margin: auto;
+	background-color: #1e93fa;
+}
+
+.wap_cpss_toast{
+	width:400px;
+	height:400px;
+	margin: -200px 0px 0px -200px;
+	position: fixed;
+	left: 50%;
+	top:50%;
+	z-index: 999;
+	text-align: center;
+}
+
+.wap_cpss_toast p{
+	color: #fff;
+	font-size: 36px;
+	margin-top: 300px;
+}
+
+.toast_fanfan_01{
+	background: url("img/wap_cpss_fanfan_04.png") no-repeat;
+}

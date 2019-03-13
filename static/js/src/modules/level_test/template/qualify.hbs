@@ -1,0 +1,27 @@
+<div class="contant">
+    <!-- 升级不合格 -->
+    {{#if_eq grade_type '2'}}
+    <div class="fail">
+        <!--最大等级等于考前等级-->
+        {{#if_cond max_grade '===' test_grade}}
+            <p class="fz18 color_333 fwB">遗憾，测试不合格，未能升级成功</p>
+            <a href="javascript:void(0);" class="button_line_blue testing_btn_01 generateExam"
+               data-grade="{{test_grade}}">重新测试</a>
+        {{else}}
+            <p class="fz18 color_333 fwB">遗憾，测试不合格，未能升级成功</p>
+            <p class="fz14 color_999 mt25">建议你重新学习L{{current_grade}}等级课程，或重新测试，测试通过后可进行L{{target_grade}}等级课程的选课和学习</p>
+            <a href="javascript:void(0);" class="button_line_blue testing_btn_01 generateExam"
+               data-grade="{{current_grade}}">重新测试</a>
+        {{/if_cond}}
+        <a href="/grade/main" class="button_blue testing_btn_02 ml10">查看等级说明</a>
+    </div>
+    {{else}}
+        <!--定级不合格-->
+        <div class="fail">
+            <p class="fz18 color_333 fwB">遗憾，测试不合格，未能定级成功</p>
+            <p class="fz14 color_999 mt25">请准确选择你的日语学习经历，生成符合你实际水平的等级测试题</p>
+            <a href="/grade/main" class="button_line_blue testing_btn_01">重新测试</a>
+            <a href="/grade/main" class="button_blue testing_btn_02 ml10">查看等级说明</a>
+        </div>
+    {{/if_eq}}
+</div>

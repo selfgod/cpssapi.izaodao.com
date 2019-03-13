@@ -1,0 +1,29 @@
+{{#each list}}
+    <div class="ykyc_v4_tip">
+        <div class="ykyc_v4_tigan">题干</div>
+        <div class="ykyc_v4_word1">{{{title}}}</div>
+        {{#each questions}}
+            <div id="q_{{question_id}}"></div>
+            <div class="ykyc_v4_word2">
+                <div class="ykyc_v4_num fl">{{index}}</div>
+                <span class="fl">{{{question}}}</span>
+            </div>
+            <div class="ykyc_v4_choose" data-qid="{{question_id}}">
+                <ul>
+                    {{#each option}}
+                        <li class="clearfix">
+                            <input type="radio" id="{{wa_id}}" name="{{../question_id}}" value="{{wa_id}}" {{#if_eq ../answer wa_id}}checked="checked"{{/if_eq}} class="ykyc_v4_radio1 fl">
+                            <label for="{{wa_id}}" class="ykyc_v4_text1 fl">{{inc @index '+'}}、{{wa_answer}}</label>
+                        </li>
+                    {{/each}}
+                </ul>
+            </div>
+            <div class="ykyc_v4_tion">
+                <div class="ykyc_v4_correct fl">
+                    <img src="../img/bt5.jpg">&nbsp;&nbsp;
+                    <a href="javascript:;" class="report_wrong" data-qid="{{question_id}}">纠错</a>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+{{/each}}

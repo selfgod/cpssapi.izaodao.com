@@ -1,0 +1,55 @@
+<div class="cpss_classlearn">
+    <ul>
+    {{#each list}}
+        <li>
+            <div class="ul_list_container {{#if @first}}borT_f8f8f8{{/if}}">
+            <span class="cpss_classlearn_honor taR">
+                {{#if check_in_score}}<p>+{{check_in_score}}</p>{{/if}}
+                <i class="{{#if check_in_status}}cpss_icon_medal_ov{{else}}cpss_icon_medal_off{{/if}}"></i>
+            </span>
+            <p class="cpss_classlearn_catalog"><b>{{index}} -</b>{{title}}</p>
+            <p class="cpss_classlearn_techer">主讲老师：{{teacher_name}}</p>
+            <div class="cpss_classlearn_operate" data-id="{{id}}">
+                {{#if isRecord}}
+                    {{#if record_download}}
+                        {{#if record_link}}
+                            <a href="javascript:;" class="google_event" ga-type="点击上课_下载图标" ga-title="{{title}}"><i class="cpss_icon_download_ov mr15"></i></a>
+                        {{else}}
+                            <a><i class="cpss_icon_download_off mr15"></i></a>
+                        {{/if}}
+                    {{/if}}
+                    <a href="javascript:;" class="cpss_large_btn review google_event" ga-type="点击上课_看录播课" ga-title="{{title}}">看录播课</a>
+                {{else}}
+                    {{#if_eq status 'finished'}}
+                        {{#if record_download}}
+                            {{#if record_link}}
+                                <a href="javascript:;" class="google_event" ga-type="点击上课_下载图标" ga-title="{{title}}"><i class="cpss_icon_download_ov mr15"></i></a>
+                            {{else}}
+                                <a><i class="cpss_icon_download_off mr15"></i></a>
+                            {{/if}}
+                        {{/if}}
+                        {{#if record_link}}
+                            <a href="javascript:;" class="cpss_large_btn review google_event" ga-type="点击上课_看录播课" ga-title="{{title}}">看录播课</a>
+                        {{else}}
+                            {{#if_eq is_record '1'}}
+                                <a class="cpss_large_btn gray" title="课件未上传">看录播课</a>
+                            {{else}}
+                                <a class="cpss_large_btn gray">无录播课</a>
+                            {{/if_eq}}
+                        {{/if}}
+                    {{/if_eq}}
+                    {{#if_eq status 'today'}}
+                        <p class="fz12 color_3399ff">今天直播 {{time_str}}</p>
+                        <a href="javascript:;" data-start="{{start_st}}" data-zdtalk="{{zdtalk_link}}" class="cpss_large_btn blue enter_room google_event" ga-type="点击上课_进入教室" ga-title="{{title}}">进入教室</a>
+                    {{/if_eq}}
+                    {{#if_eq status 'not start'}}
+                        <p class="fz12 color_aaa">{{time_str}}</p>
+                        <a href="javascript:;" class="cpss_large_btn gray">等待直播</a>
+                    {{/if_eq}}
+                {{/if}}
+            </div>
+            </div>
+        </li>
+    {{/each}}
+    </ul>
+</div>

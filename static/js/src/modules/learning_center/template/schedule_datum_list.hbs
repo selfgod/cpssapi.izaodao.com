@@ -1,0 +1,26 @@
+<div class="cpss_datum">
+    <ul>
+    {{#each list}}
+        <li class="clearfix">
+            <div class="ul_datum_container {{#if @first}}boT_eee{{/if}}">
+            <div class="cpss_datum_left">
+                {{#if_eq download_type '1'}}
+                    <img src="../img/cpss_icon_book.png" alt="">
+                    <p>电子教材</p>
+                {{/if_eq}}
+                {{#if_eq download_type '2'}}
+                    <img src="../img/cpss_icon_audio.png" alt="">
+                    <p>音频下载</p>
+                {{/if_eq}}
+                {{#if_eq download_type '3'}}
+                    <img src="../img/cpss_icon_note.png" alt="">
+                    <p>习题资料</p>
+                {{/if_eq}}
+            </div>
+            <p class="cpss_datum_title">{{names}}</p>
+            <a href="{{tfp_url}}" class="cpss_small_btn flR mt13 google_event" ga-type="点击资料_下载" ga-title="{{names}}">下 载</a>
+            </div>
+        </li>
+    {{/each}}
+    </ul>
+</div>

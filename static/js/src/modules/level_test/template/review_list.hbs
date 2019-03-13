@@ -1,0 +1,54 @@
+<!-- 大题 -->
+{{#each list}}
+    <div class="topic_main">
+        {{#if title}}
+            <div class="topic_title">
+                <p>题干</p>
+                <p class="mt10">{{{title}}}</p>
+            </div>
+        {{/if}}
+        {{#each questions}}
+            <div class="question_item" id="q_{{question_id}}">
+                <div class="answer clearfix"><i class="answer_icon flL">{{index}}</i>
+                    <div class="question_ti flL">{{{question}}}</div>
+                </div>
+                <div class="answer_list main_question_id" data-qid="{{question_id}}">
+                    <ul>
+                        {{#each option}}
+                            <li class="clearfix">
+                                <input type="radio" id="{{wa_id}}" name="{{../question_id}}" value="{{wa_id}}"
+                                       {{#if_eq ../answer wa_id}}checked="checked"{{/if_eq}} class="main_radio"
+                                       disabled>
+                                <label for="{{wa_id}}" class="{{#if_eq  ../answer wa_id}}
+                                    {{#if_eq ../right ../answer}}right_font{{else}}error_font{{/if_eq}}
+                                {{else}}
+                                    {{#if_eq ../right wa_id}}right_font{{/if_eq}}
+                                {{/if_eq}}">{{inc @index '+'}}、{{wa_answer}}
+                                    <i class="{{#if_eq  ../answer wa_id}}
+                                        {{#if_eq ../right ../answer}}right_img{{else}}error_img{{/if_eq}}
+                                    {{else}}
+                                        {{#if_eq ../right wa_id}}right_img{{/if_eq}}
+                                    {{/if_eq}}"></i>
+                                </label>
+                            </li>
+                        {{/each}}
+                    </ul>
+                </div>
+                {{#if analysis}}
+                    <div class="parse">
+                        <p class="color_444 mb05">解析</p>
+                        <p class="fz14 color_888">正确答案：{{right_index}} 【解析】{{analysis}}</p>
+                    </div>
+                {{/if}}
+                <div class="line_text clearfix">
+                    <a href="javascript:void (0);"
+                       class="question zzd_question {{#if_eq zdknow_id ''}}popup{{/if_eq}}"
+                       data-topic="{{@../key}}" data-question="{{question_id}}" data-relate_id="{{zdknow_id}}">提问
+                        <!--后期添加勿删<b class="question-icon">20</b>--></a>
+
+                </div>
+            </div>
+        {{/each}}
+    </div>
+{{/each}}
+<!-- end 大题 -->

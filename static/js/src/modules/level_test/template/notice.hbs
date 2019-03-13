@@ -1,0 +1,30 @@
+<!-- 定级考前须知 -->
+{{#list}}
+{{#if_eq is_first_grade 1}}
+    <div class="instructions" >
+        <span class="level_img"><img src="../static/image/level_test/level_little_on_0{{grade_id}}.png" alt=""></span>
+        <p class="level_text">L{{grade_id}}等级测试</p>
+        <p class="fz16 color_666">你即将参加水平测试，本次测试共计{{question_num}}道题，预计需要{{duration}}分钟，请保证网络畅通</p>
+        <div class="level_text_icon taL">
+            <p>测试合格，将须按照所定级别，选课、学习</p>
+            <p>测试不合格，可以选择重新测试</p>
+        </div>
+        <a href="/grade/main" class="button_line_blue start-test-btn mr10">重新选择</a>
+        <a href="javascript:void(0);" class="button_blue start-test-btn generateExam" data-grade="{{grade_id}}">开始测试</a>
+    </div>
+{{else}}
+    <!--升级-->
+    <!--<div class="instructions" >-->
+        <!--<span class="level_img"><img src="../static/image/level_test/level_little_on_0{{grade_id}}.png" alt=""></span>-->
+        <!--<p class="level_text">L{{grade_id}}等级测试</p>-->
+        <!--<p class="fz16 color_666">你即将参加水平测试，如果顺利通过，你将升级至L{{grade_id}}等级开始选课、学习</p>-->
+        <!--<div class="level_text_icon taL">-->
+            <!--<p>本次测试共计{{question_num}}道题，预计需要{{duration}}分钟，请保证网络畅通</p>-->
+            <!--<p>测试合格，将在所定级别，选课、学习</p>-->
+            <!--<p>测试不合格，可以选择重新测试</p>-->
+        <!--</div>-->
+        <!--<a href="/grade/main" class="button_line_blue start-test-btn mr10">重新选择</a>-->
+        <!--<a href="javascript:void(0);" class="button_blue start-test-btn generateExam" data-grade="{{grade_id}}">开始测试</a>-->
+    <!--</div>-->
+{{/if_eq}}
+{{/list}}

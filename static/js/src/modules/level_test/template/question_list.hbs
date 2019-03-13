@@ -1,0 +1,28 @@
+<!-- 大题 -->
+{{#each list}}
+    <div class="topic_main">
+        {{#if title}}
+            <div class="topic_title">
+                <p>题干</p>
+                <p class="mt10">{{{title}}}</p>
+            </div>
+        {{/if}}
+        {{#each questions}}
+            <div class="question_item" id="q_{{question_id}}">
+                <div class="answer clearfix"><i class="answer_icon flL">{{index}}</i><div class="question_ti flL">{{{question}}}</div></div>
+                <div class="answer_list main_question_id" data-qid="{{question_id}}">
+                    <ul>
+                        {{#each option}}
+                            <li class="clearfix">
+                                <input type="radio" id="{{wa_id}}" name="{{../question_id}}" value="{{wa_id}}"
+                                       {{#if_eq ../answer wa_id}}checked="checked"{{/if_eq}} class="main_radio">
+                                <label for="{{wa_id}}" class="">{{inc @index '+'}}、{{wa_answer}}</label>
+                            </li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+{{/each}}
+<!-- end 大题 -->

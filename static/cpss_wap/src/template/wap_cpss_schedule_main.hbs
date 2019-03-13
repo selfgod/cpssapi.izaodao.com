@@ -1,0 +1,52 @@
+{{#if data}}
+    {{#if data_today}}
+        {{#each data_today}}
+            <div class="wap_cpss_main clearfix">
+                <h2>{{lessonName}}</h2>
+                <div class="wap_cpss_list flL">
+                    <i><img src="../images/wap_cpss_time.png" alt=""></i>
+                    <h3 class="mt08 ml50">上课时间</h3>
+                    <p class="wap_cpss_list_text">{{start_time_d.[1]}}月{{start_time_d.[2]}}日    {{start_time_t}}
+                        -{{end_time_t}}</p>
+                </div>
+                <div class="wap_cpss_list ml10 flR">
+                    <i><img src="../images/wap_cpss_tercher.png" alt=""></i>
+                    <h3 class="mt08 ml50">主讲老师</h3>
+                    <p class="wap_cpss_list_text w130 flL">{{teacher_name.name}}老师</p>
+                    <span class="wap_cpss_icon_teacherImg mr20"><img src="{{teacher_name.avatar}}" alt=""></span>
+                </div>
+                <a data-schedule_lesson_id="{{schedule_lesson_id}}"
+                   class="wap_cpss_classroom_button clearfix ga google_event curP" ga-location="wap学习中心"
+                   ga-type="点击教室按钮">教室</a>
+            </div>
+        {{/each}}
+    {{else}}
+        <div class="wap_cpss_main clearfix">
+            <div class="wap_cpss_noClass">
+                <img src="../images/wap_cpss_fanfan_01.png" alt="">
+                <p class="fz30 color_979797 mt15">今天没有直播课程</p>
+                {{#if next_class_data}}
+                    <div class="wap_cpss_remind">
+                        <p>下次课提醒：</p>
+                        <p class="w360">
+                            <b class="color_1e93fa">
+                                {{next_class_data.month}}月{{next_class_data.day}}日(周{{next_class_data.week}}
+                                ){{next_class_data.hour}}点
+                            </b><br/>
+                            {{next_class_data.title}}
+                        </p>
+                    </div>
+                {{else}}
+                    <p class="wap_cpss_end_btn">课程已全部上完</p>
+                {{/if}}
+            </div>
+        </div>
+    {{/if}}
+{{else}}
+    <div class="wap_cpss_main clearfix">
+        <div class="wap_cpss_noClass">
+            <img src="../images/wap_cpss_fanfan_01.png" alt="">
+            <p class="wap_cpss_end_btn">课程已全部上完</p>
+        </div>
+    </div>
+{{/if}}

@@ -1,0 +1,48 @@
+@charset "UTF-8";
+/**************************************************************************
+ radio_button_v5.css
+
+ 单选
+ *************************************************************************/
+
+.screen_v5 b,
+.screen_v5 p{
+    display:inline-block;
+    zoom: 1;
+    *display: inline;
+    font-size: 14px;
+    margin-right:33px;
+}
+
+.screen_v5 b{
+    color: #333;
+}
+
+.screen_v5 p{
+    color: #999;
+    cursor: pointer;
+    padding-left: 20px;
+    line-height: 30px;
+    -moz-user-select: none; /*火狐*/
+    -webkit-user-select: none; /*webkit浏览器*/
+    -ms-user-select: none; /*IE10*/
+    -khtml-user-select: none; /*早期浏览器*/
+    user-select: none;
+    background: url("img/radio_v5.png") no-repeat 0px 10px;
+}
+
+p.current_screen_v5{
+    color: #3399ff;
+    cursor: text;
+    background: url("img/radio_v5.png") no-repeat 0px -58px;
+}
+
+.screen_v5 span{
+    width:800px;
+}
+
+
+
+
+
+

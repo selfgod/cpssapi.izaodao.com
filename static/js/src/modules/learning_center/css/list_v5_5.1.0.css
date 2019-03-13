@@ -1,0 +1,137 @@
+@charset "UTF-8";
+/*******************************************************************
+ list_v5_5.1.0.css
+ *******************************************************************/
+/*.class_list_v5{
+    min-height: 990px;
+    padding-bottom: 70px;
+}*/
+
+.class_list_v5 ul{
+    width: 100%;
+}
+.class_list_v5 ul:hover{
+    background-color: #fafafa;
+}
+.ul_lesson_container {
+    width: 900px;
+    height: 70px;
+    margin: 0 auto;
+    padding: 30px 0 20px;
+    border-bottom: 1px solid #eee;
+}
+.class_list_v5 li.calendar_status_v5{
+    width: 40px;
+    float: left;
+    padding-left: 10px;
+    position: relative;
+    text-align: right;
+    padding-bottom: 20px;
+}
+
+.report_v5{
+    height:20px;
+    font-size: 14px;
+    position: absolute;
+    top: 22px;
+    left: -4px;
+    font-size: 14px;
+    font-family: "Arial Negreta", "Arial";
+}
+
+.status_hover_v5{
+    width:100px;
+    height:49px;
+    display: none;
+    color: #999;
+    font-size: 12px;
+    margin-top: 8px;
+    position: absolute;
+    left: 50%;
+    top: -55px;
+    text-align: center;
+    margin-left: -40px;
+    line-height: 49px;
+    background: url("img/status_hover_bg_v5.png") no-repeat;
+}
+
+.calendar_status_v5:hover .status_hover_v5{
+    display: block;
+}
+
+.class_list_v5 li.calendar_chapter_v5{
+    float: left;
+    margin-left: 30px;
+    padding-top: 5px;
+}
+
+.class_list_v5 li.calendar_time_v5{
+    width: 190px;
+    float: left;
+    text-align: center;
+}
+
+.class_list_v5 ul li.calendar_button_v5{
+    position: relative;
+    width: 170px;
+    float: right;
+    padding: 15px 0px 0px 15px;
+}
+
+.class_list_v5 ul li.calendar_button_v5 a:link{
+    font-size: 14px;
+    display: block;
+}
+
+.calendar_chapter_v5 p{
+    width:270px;
+    color: #555;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    font-size: 16px;
+}
+.hover_blue:hover{
+    color: #39f!important;
+}
+.calendar_chapter_v5 b{
+    font-size: 12px;
+    color: #999;
+}
+
+.chapter_time_v5{
+    line-height: 32px;
+}
+
+.tacher_img_v5 img{
+    width:30px;
+    height:30px;
+    border-radius: 50px;
+    border: 1px solid #e6e6e6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

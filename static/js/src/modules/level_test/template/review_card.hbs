@@ -1,0 +1,11 @@
+<div class="scantron_list">
+    <ul>
+        <li>
+            {{#each questions}}
+                {{#each this}}
+                    <a href="#q_{{id}}" class="{{#if_eq index 5}}mr00{{/if_eq}} {{#if answer}}{{#if_eq status 1}}current{{else}}error_bg{{/if_eq}}{{else}}unfinished{{/if}}" id="card_{{id}}" >{{index}}</a>
+                {{/each}}
+            {{/each}}
+        </li>
+    </ul>
+</div>

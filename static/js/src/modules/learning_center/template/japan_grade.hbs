@@ -1,0 +1,25 @@
+{{#if_cond grade_id '>' 0}}
+<div class="grading-v530">
+    <span class="learning-v530">
+        <a href="/grade/main" target="_blank">
+            <img src="../static/image/level_test/level_little_on_{{#if_cond grade_id '<' 10}}0{{grade_id}}{{else}}{{grade_id}}{{/if_cond}}.png" alt="">
+        </a>
+    </span>
+    {{#if_cond is_pass_max '===' 1}}
+        <a href="/grade/main" target="_blank" class="learning-v530-btn button_line_blue">等级说明</a>
+    {{else}}
+        <a href="/grade/notice" target="_blank" class="learning-v530-btn button_line_blue">升级测试</a>
+    {{/if_cond}}
+</div>
+{{else}}
+<div class="inClass-v530">
+    <span class="learning-v530">
+        <a href="/grade/main" target="_blank"><img src="../static/image/level_test/level_little_no.png" alt=""></a></span>
+    <a href="/grade/main" target="_blank" class="learning-v530-btn button_line_blue">定级测试</a>
+    <div class="floating-v530 showTip">
+        <b class="close-v530 closeTip">×</b>
+        <span class="triangle-right-v530"></span>
+        <p>快来参加日语水平测试！将根据你的日语等级为你提供适合的学习建议和选课建议</p>
+    </div>
+</div>
+{{/if_cond}}

@@ -1,0 +1,122 @@
+.ykyc_v4_con {
+    width: 980px;
+    overflow: hidden;
+    margin: 20px auto;
+    min-height: 100%;
+}
+
+.exam_v4_befTitle {
+    font-size: 24px;
+    color: #444;
+    line-height: 30px;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.exam_v4_befDiv, .exam_v4_befNotice {
+    width: 800px;
+    overflow: hidden;
+    margin-left: 89px;
+}
+
+.exam_v4_befDiv b {
+    display: block;
+    font-size: 16px;
+    color: #444;
+    line-height: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.exam_v4_befDiv .txt_head {
+    width: 798px;
+    margin-top: 8px;
+}
+
+.exam_v4_befDiv .txt_head span {
+    line-height: 56px;
+    font-size: 16px;
+    background: #69B87D;
+    color: #FFF;
+    text-align: center;
+    display: inline-block
+}
+
+.exam_v4_befDiv .txt_head .span1 {
+    width: 598px;
+}
+
+.exam_v4_befDiv .txt_head .span2 {
+    width: 199px;
+    margin-left: 1px;
+}
+
+.exam_v4_befDiv_table {
+    width: 798px;
+    border: 1px solid #b6f0c4;
+    margin-top: 1px;
+    text-align: center;
+}
+
+.exam_v4_befDiv_table th {
+    text-align: center;
+    background-color: #B5EFC3;
+    line-height: 56px;
+    font-size: 16px;
+    color: #69B87D;
+    border-left: 1px solid #efeff0;
+
+}
+
+.exam_v4_befDiv_table td {
+    text-align: center;
+    line-height: 56px;
+    font-size: 16px;
+    color: #666666;
+    border-left: 1px solid #b6f0c4;
+}
+
+.exam_v4_befNotice span {
+    display: block;
+    font-size: 20px;
+    color: #444;
+    line-height: 20px;
+    margin-top: 20px;
+}
+
+.exam_v4_befNotice p {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    line-height: 24px;
+}
+
+.exam_v4_befLink {
+    width: 170px;
+    height: 34px;
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+.btn {
+    text-decoration: none;
+    display: block;
+    background: #CCC;
+    width: 170px;
+    height: 34px;
+    font-size: 16px;
+    color: #fff;
+    line-height: 34px;
+    text-align: center;
+}
+
+.btn-green {
+    background: url(./img/bt25.jpg) no-repeat;
+    cursor: pointer;
+}
+
+.tr_line td {
+    border-bottom: 1px solid #b6f0c4;
+}

@@ -1,0 +1,16 @@
+<p class="data_icon">2018年1月10日起，你需要根据日语等级进行选课</p>
+<p class="data_text">请准确选择你的日语学习经历，方可生成符合你实际水平的等级测试题<br>如果学习过多本教材，建议选择你认为比较熟悉的一本</p>
+<div class="data_form clearfix">
+    <span id="select_book" class="flL">
+        <p>请选择</p>
+        <select name="book_id" class="book_action">
+            <option value="0">学过的教材</option>
+            {{#each book_info}}
+                <option value="{{id}}">{{name}}</option>
+            {{/each}}
+        </select>
+    </span>
+    <div id="select_box"></div>
+</div>
+<p id="text_error" class="data_text_error"></p>
+<a href="javascript:;" id="create_test" class="start-test-btn button_blue">生成测试题</a>

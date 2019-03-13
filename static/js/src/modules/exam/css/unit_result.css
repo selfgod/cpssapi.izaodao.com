@@ -1,0 +1,236 @@
+.exam_v4_result_f {
+    width: 978px;
+    overflow: hidden;
+}
+
+.exam_v4_result_f b {
+    display: block;
+    float: left;
+    font-size: 18px;
+    color: #444444;
+    line-height: 30px;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-left: 25px;
+}
+
+.exam_v4_s_con {
+    overflow: hidden;
+    width: 978px;
+}
+
+.exam_v4_sr {
+    background: url(./img/socre_bg.png) no-repeat;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    margin-top: 25px;
+    margin-left: 36px;
+}
+
+.exam_v4_s_self {
+    font-size: 24px;
+    color: #69b97d;
+    line-height: 50px;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.exam_v4_s_self span {
+    font-size: 60px;
+    font-family: Georgia;
+    color: #69b97d;
+    line-height: 50px;
+}
+
+.exam_v4_s_all {
+    font-size: 16px;
+    color: #888;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.exam_v4_ss {
+    margin-top: 65px;
+    margin-left: 30px;
+    width: 250px;
+    display: inline !important;
+}
+
+.exam_v4_ss ul li {
+    display: block;
+    font-size: 14px;
+    color: #888;
+    line-height: 30px;
+}
+
+.exam_v4_ss ul li span {
+    color: #444;
+    display: inline-block;
+    width: 90px;
+    float: left;
+}
+
+.exam_v4_e {
+    width: 410px;
+    padding-right: 20px;
+}
+
+.exam_v4_e_title {
+    font-size: 14px;
+    color: #444;
+    line-height: 30px;
+}
+
+.exam_v4_s {
+    width: 520px
+}
+
+.exam_v4_result_f1 {
+    overflow: hidden;
+}
+
+.exam_v4_result_f1 b {
+    display: block;
+    float: left;
+    font-size: 18px;
+    color: #444;
+    line-height: 30px;
+    font-weight: 400;
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+.exam_v4_result_f1 img {
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.exam_v4_result_f1 a {
+    display: block;
+    float: left;
+    font-size: 14px;
+    color: #888888;
+    line-height: 30px;
+    margin-left: 5px;
+}
+
+.exam_v4_result_f1 a:hover {
+    text-decoration: underline;
+}
+
+.exam_v4_result2 {
+    background-color: #fafafb;
+    border: 1px solid #dfe0e2;
+    border-top: none;
+    margin-top: 1px;
+    width: 978px;
+    overflow: hidden;
+}
+
+.exam_v4_result2 .db {
+    float: left;
+}
+
+.exam_v4_result2 .db .no {
+    width: 243px;
+    float: left;
+    border-right: 1px solid #dfe0e2;
+    min-height: 450px;
+    font-size: 16px;
+    color: #888;
+    text-align: center;
+    line-height: 450px;
+}
+
+.exam_v4_result2_bo {
+    width: 243px;
+    min-height: 450px;
+    overflow: hidden;
+    border-right: 1px solid #dfe0e2;
+}
+
+.exam_v4_result2_boT, .exam_v4_result2_boL {
+    width: 204px;
+    overflow: hidden;
+    display: inline;
+    margin: 30px auto;
+}
+
+.exam_v4_result2_boT {
+    display: block;
+}
+
+.exam_v4_result2_boT, .exam_v4_result2_boL ul {
+    width: 204px;
+    overflow: hidden;
+    margin: 30px auto;
+}
+
+.exam_v4_result2_boL {
+    margin-top: 20px;
+}
+
+.exam_v4_result2_boT span {
+    display: inline-block;
+    font-size: 16px;
+    color: #444444;
+    line-height: 30px;
+}
+
+.exam_v4_result2_boT p {
+    display: inline-block;
+    font-size: 14px;
+    color: #666666;
+    line-height: 30px;
+}
+
+.w90 {
+    width: 90px;
+}
+
+.exam_v4_result2_boT p b {
+    font-weight: 400;
+    color: #69b97d;
+}
+
+.exam_v4_result2_boL ul li {
+    display: block;
+    float: left;
+    width: 67px;
+    text-align: center;
+    border-right: 1px solid #dfe0e2;
+    font-size: 14px;
+    color: #666666;
+    line-height: 20px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+
+.b_gr {
+    color: #69b97d !important;
+    font-family: Arial;
+    font-weight: 400;
+}
+
+.b_red {
+    color: #cc0001 !important;
+    font-family: Arial;
+    font-weight: 400;
+}
+
+.ykyc_v4_answer_ka1 {
+    padding-left: 7px;
+    width: 200px;
+    overflow: hidden;
+    margin: 10px auto;
+}
+
+.ykyc_v4_answer_ka1 a {
+    float: left;
+}
+
+

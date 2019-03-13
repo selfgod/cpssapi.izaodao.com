@@ -1,0 +1,54 @@
+.exam_v4_rest1, .exam_v4_rest3 {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.exam_v4_rest1 img {
+    width: 205px;
+    margin: 48px auto 20px;
+}
+
+.exam_v4_rest2 {
+    background: url(./img/img9.jpg) no-repeat;
+    width: 222px;
+    height: 41px;
+    margin: 20px auto 30px auto;
+    overflow: hidden;
+}
+
+.exam_v4_rest2 span {
+    display: block;
+    float: left;
+    font-size: 36px;
+    color: #efefef;
+    line-height: 41px;
+}
+
+.exam_v4_rest3 span {
+    font-size: 14px;
+    color: #666666;
+    line-height: 24px;
+}
+
+.exam_v4_rest3 img {
+    margin-right: 5px;
+    display: inline;
+    vertical-align: middle;
+}
+
+.exam_v4_rest3 a {
+    display: block;
+    background: url(./img/bt26.jpg) no-repeat;
+    width: 190px;
+    height: 34px;
+    font-size: 16px;
+    color: #fff;
+    line-height: 34px;
+    text-align: center;
+    margin: 20px 0px 80px 380px;
+}
+
+.exam_v4_rest3 a:hover {
+    background: url(./img/bt27.jpg) no-repeat;
+}

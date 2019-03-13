@@ -1,0 +1,172 @@
+@charset "UTF-8";
+/*******************************************************************
+ schedule_v5_5.1.0.css
+ *******************************************************************/
+h1.title_v5{
+    font-size: 16px;
+    color: #666;
+    padding: 25px 30px;
+    font-weight: normal;
+}
+
+h1.title_v5 b:hover{
+    color: #3399ff;
+}
+
+.button_v5{
+    width:80px;
+    height:36px;
+    margin: auto;
+    display: block;
+    line-height: 36px;
+}
+
+.day_v5{
+    width: 700px;
+    height: 59px;
+    position: relative;
+    border-bottom:1px solid #e5e5e5;
+}
+
+.day_v5 p{
+    width: 59px;
+    /*width: 67px\0;*/
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    float: left;
+    margin: 20px 13px 0px 0px;
+    position: relative;
+    cursor: pointer;
+    -moz-user-select: none; /*火狐*/
+    -webkit-user-select: none; /*webkit浏览器*/
+    -ms-user-select: none; /*IE10*/
+    -khtml-user-select: none; /*早期浏览器*/
+    user-select: none;
+}
+
+/*@media screen and(-ms-high-contrast:active),(-ms-high-contrast:none) {*/
+
+    /*.day_v5 p {*/
+        /*width: 67px;*/
+        /*margin-right: 23px;*/
+    /*}*/
+
+/*}*/
+
+.day_v5 b{
+    color: #ccc;
+}
+
+.calendar_v5{
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+    padding: 16px 0px 0px 18px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.calendar_current_v5{
+    color: #3399ff;
+    border-bottom: 3px solid #3399ff;
+}
+
+.calendar_tips_v5{
+    width:32px;
+    height:19px;
+    left:50%;
+    top:-32px;
+    margin-left:-15px;
+    position: absolute;
+}
+
+.calendar_list_v5{
+    position: relative;
+    min-height: 600px;
+}
+
+.calendar_list_v5 ul{
+    width: 100%;
+    padding: 0;
+    border-bottom: 0;
+}
+.ul_container {
+    width:640px;
+    height: 71px;
+    padding: 30px 0 20px;
+    margin: 0 auto;
+    border-bottom: 1px solid #e5e5e5;
+}
+.calendar_list_v5 ul li.calendar_button_v5{
+    width: 280px;
+    float: left;
+    text-align: right;
+    padding: 13px 0 0 10px;
+}
+
+.calendar_list_v5 ul li.calendar_button_v5 a:link{
+    font-size: 12px;
+}
+
+
+
+/****************************************************************************************************************
+ 未选课
+ ********************************************************************************************************************/
+.no_course_v5{
+    width:500px;
+    margin: 0px auto;
+    padding: 120px 0px 0px;
+    text-align: center;
+}
+
+.icon_01_v5{
+    width:230px;
+    padding-left: 15px;
+    margin: 15px auto 0px auto;
+    font-size: 16px;
+    color: #999;
+    background: url("img/icon_01_v5.png") no-repeat 0px 4px;
+}
+/*
+.current_v5{
+    color: #3399ff !important;
+    border-bottom: 3px solid #3399ff;
+}*/
+
+.current_v5 b{
+    color: #3399ff !important;
+}
+
+.no_variable_v5{
+    min-height: 560px;
+    display: block;
+    padding-top: 200px;
+}
+
+/*****************************************************************************************************************
+ v5.2.1 迭代
+ ****************************************************************************************************/
+.live_v521{
+    width: 113px;
+    height: 20px;
+    font-weight: normal;
+    font-size: 16px;
+    color: #3399ff;
+    float: left;
+    border-right: 1px solid #e5e5e5;
+    text-align: center;
+    margin: 19px 15px 19px 0px;
+}
+
+.current_v5{
+    cursor: default !important;
+    color: #3399ff !important;
+    background: url("img/current_bg.png") no-repeat center bottom;
+}
+.h1093 {
+    min-height: 1184px!important;
+}

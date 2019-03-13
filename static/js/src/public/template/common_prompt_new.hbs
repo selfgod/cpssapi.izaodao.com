@@ -1,0 +1,41 @@
+{{#if first_report}}
+    <div class="alert_main taC">
+            <p class="alert_text_01">{{title}}</p>
+            <span class="alert_bg_01">
+                <p class="alert_text_02">已坚持上课<b class="fz18 color_ff9000 ml05 mr05">1</b>次</p>
+                <p class="alert_text_04">小试牛刀</p>
+                <p class="alert_text_03">第一次在早道上课</p>
+            </span>
+            <div class="alert_code">
+                <span><img src="{{qr_code}}" width=74px; height:74px; alt=""></span>
+                <p>扫码分享到朋友圈<br>更有利于坚持学习</p>
+            </div>
+    </div>
+{{else}}
+    {{#if full_attendance}}
+        <div class="alert_main taC">
+                <p class="alert_text_01">{{title}}</p>
+                <span class="alert_bg_03">
+                    <p class="alert_text_02">已坚持上课<b class="fz18 color_ff9000 ml05 mr05">{{report_num}}</b>次</p>
+                    <p class="alert_text_04">满勤</p>
+                    <p class="alert_text_03">完成当前班级的全部课程</p>
+                </span>
+                <div class="alert_code">
+                    <span><img src="{{qr_code}}" width=74px; height:74px; alt=""></span>
+                    <p>扫码分享到朋友圈<br>更有利于坚持学习</p>
+                </div>
+        </div>
+    {{else}}
+        <div class="alert_main taC" >
+                <p class="alert_text_01">{{title}}</p>
+                <span class="alert_bg_02">
+                    <p class="alert_text_02">已坚持上课</p>
+                    <p class="alert_text_04 pt05 fz14"><b class="fz26">{{report_num}}</b>次</p>
+                </span>
+                <div class="alert_code">
+                    <span><img src="{{qr_code}}" width=74px; height:74px; alt=""></span>
+                    <p>扫码分享到朋友圈<br>更有利于坚持学习</p>
+                </div>
+        </div>
+    {{/if}}
+{{/if}}

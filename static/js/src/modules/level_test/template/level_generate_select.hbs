@@ -1,0 +1,11 @@
+<span class="flR">
+    <p>已学完</p>
+    <select name="progress_id">
+        <option value="0">课程进度</option>
+        {{#if progress_info}}
+            {{#each progress_info}}
+            <option value="{{id}}">{{name}}</option>
+            {{/each}}
+        {{/if}}
+    </select>
+</span>

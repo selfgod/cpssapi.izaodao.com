@@ -1,0 +1,13 @@
+<div class="done_answer1">
+    {{#each questions}}
+        <div class="ykyc_v4_answer_ka">
+            {{#each this}}
+                <a class="datika fl {{#if answer}}now_choose{{/if}}" id="card_{{id}}" href="#q_{{id}}">{{index}}</a>
+            {{/each}}
+        </div>
+    {{/each}}
+</div>
+<div class="continue_exam">
+    <a href="javascript:;" class="continue_btn {{#if_eq cate lastCate}}submit_total{{else}}{{#if_eq cate part1LastCate}}submit_part1{{else}}continue_{{cate}}{{/if_eq}}{{/if_eq}}" data-cate="{{cate}}"></a>
+</div>
+

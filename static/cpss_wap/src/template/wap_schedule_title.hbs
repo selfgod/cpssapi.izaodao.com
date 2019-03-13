@@ -1,0 +1,18 @@
+<h2 class="wap_cpss_title taC">{{month}}月</h2>
+<div class="wap_schedule">
+    <div class="wap_schedule_day">
+        <ul class="clearfix">
+            {{#each week_array}}
+                <li data-day="{{day}}" data-w="{{w}}" class="curP">
+                    <b>{{week_name}}</b>
+                    <p {{#if select_flag}}
+                    class="bg_img_ff7234"
+                    {{else if class_flag}}
+                    class="bg_img_ebebeb"
+                    {{/if}}
+                    >{{day}}</p>
+                </li>
+            {{/each}}
+        </ul>
+    </div>
+</div>

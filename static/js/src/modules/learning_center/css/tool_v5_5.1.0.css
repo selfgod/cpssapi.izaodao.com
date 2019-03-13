@@ -1,0 +1,310 @@
+@charset "UTF-8";
+/*******************************************************************
+ tool_v5_5.1.0.css
+ *******************************************************************/
+.tool_text_v5{
+    padding: 0px 17px;
+    display: block;
+}
+
+.tool_text_v5 a:link,
+.tool_text_v5 a:visited{
+    width:100px;
+    color: #999;
+    font-size: 14px;
+    line-height: 42px;
+    text-align: center;
+    display:inline-block;
+    zoom: 1;
+    *display: inline;
+}
+.tool_text_v5 a:hover{
+    color: #39f!important;
+}
+.learning_v5{
+    width:150px;
+    margin: auto;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 56px;
+    display: block;
+}
+
+.learning_v5 p{
+    color: #666;
+}
+
+.shop_v5{
+    color: #999;
+    font-size: 12px;
+    padding-left: 16px;
+}
+
+h1.tool_title_v5{
+    font-size: 16px;
+    color: #666;
+    padding: 19px 30px 19px 30px;
+    margin: 0px 0px 19px 0px;
+    font-weight: normal;
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+h1.tool_title_v5 b{
+    cursor: pointer;
+    -moz-user-select: none; /*火狐*/
+    -webkit-user-select: none; /*webkit浏览器*/
+    -ms-user-select: none; /*IE10*/
+    -khtml-user-select: none; /*早期浏览器*/
+    user-select: none;
+    position: relative;
+}
+
+h1.tool_title_v5 b:hover{
+    color: #3399ff;
+}
+
+.banner_240_v5 img{
+    width:240px;
+    border-radius: 5px;
+}
+
+/*.current_v5{
+    cursor: text !important;
+    color: #3399ff !important;
+    border-bottom: 3px solid #3399ff;
+}*/
+
+.current_v5 b{
+    cursor: default !important;
+    color: #3399ff !important;
+}
+
+/*****************************************************************************************************************
+ v5.2.1 迭代
+ ****************************************************************************************************/
+
+.current_v5{
+    cursor: default !important;
+    color: #3399ff !important;
+    background: url("img/current_bg.png") no-repeat center bottom;
+}
+
+.line_v521{
+    height:20px;
+    border-right: 1px solid #e5e5e5;
+    margin: 0px 22px 0px 18px;
+}
+
+.line_number_v521{
+    height: 20px;
+    position: absolute;
+    border-right: 1px solid #e5e5e5;
+    top: 20px;
+    right: 59px;
+}
+
+.line_rank_v521{
+    height: 20px;
+    position: absolute;
+    border-right: 1px solid #e5e5e5;
+    top: 20px;
+    right: 120px;
+}
+
+.evaluate_main_v521 .prev_zxf {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 50%;
+    margin: 0 0 0 -30px;
+    bottom: 3px;
+    background: url("img/pageList_bg.png") no-repeat right top;
+}
+.evaluate_main_v521 .prev_zxf:hover {
+    background: url("img/pageList_left_hover.png") no-repeat;
+}
+.evaluate_main_v521 .next_zxf {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 50%;
+    margin: 0 -30px 0 0;
+    bottom: 3px;
+    background: url("img/pageList_bg.png") no-repeat right bottom;
+}
+.evaluate_main_v521 .next_zxf:hover {
+    background: url("img/pageList_right_hover.png") no-repeat;
+}
+.evaluate_main_v521 .prev_zxf.prevStop {
+    cursor: default;
+    background: url("img/pageList_bg.png") no-repeat left top;
+}
+
+.evaluate_main_v521 .next_zxf.nextStop {
+    cursor: default;
+    background: url("img/pageList_bg.png") no-repeat left bottom;
+}
+
+.techer_img_v521 img{
+    width:40px;
+    height:40px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+.techer_title_v521{
+    margin-left: 10px;
+}
+
+.techer_title_v521 p{
+    width:150px;
+    font-size: 14px;
+    color: #333;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+.techer_title_v521 b{
+    font-size: 12px;
+    color: #ccc;
+}
+
+.techer_text_v521{
+    width:200px;
+    margin:0px auto;
+    color: #999;
+    font-size: 12px;
+    line-height: 20px;
+    text-align:justify;
+    text-justify:inter-ideograph;
+}
+
+.evaluate_layout_v521{
+    width: 200px;
+    height: 131px;
+    margin-right: 20px;
+}
+.evaluate_list_v521 {
+    height: 131px;
+}
+.note_v521{
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 10px;
+    text-align: center;
+    line-height: 19px;
+    position: absolute;
+    top: -10px;
+    background-color: #ff5533;
+}
+
+.learning_report_height {
+    height: 280px;
+    width: 240px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.mhAuto {
+    min-height: auto!important;
+}
+
+/*迭代 v5.3.0*/
+.learning-v530{
+    width:98px;
+    margin: 30px auto 0px auto;
+    display: block;
+}
+
+a.learning-v530-btn{
+    width:68px;
+    height:28px;
+    font-size: 12px;
+    line-height: 28px;
+    text-align: center;
+    display: block;
+    margin: 25px auto 10px auto;
+}
+
+.inClass-v530{
+    position: relative;
+}
+
+.floating-v530{
+    width: 170px;
+    padding: 10px 25px 10px 20px;
+    background-color: #000;
+    font-size: 12px;
+    color: #999;
+    position: absolute;
+    left: -142px;
+    top: 125px;
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+    border-radius: 5px;
+    -moz-box-shadow: 0px 0px 20px #cfcfcf;
+}
+
+.floating-v530 p{
+    color: #fff;
+}
+
+.floating-v530 b.close-v530{
+    font-size: 22px;
+    color: #ccc;
+    position: absolute;
+    right: 3px;
+    top: -5px;
+    cursor: pointer;
+}
+
+.floating-v530 b.close-v530:hover{
+    color: #3399ff;
+}
+
+.triangle-right-v530 {
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 16px;
+    right: -7px;
+    border-top: 6px solid transparent;
+    border-left: 7px solid #000;
+    border-bottom: 6px solid transparent;
+}
+
+.credit-v530{
+    width:130px;
+    font-size: 14px;
+    color: #999;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    vertical-align: middle;
+    margin-left: 20px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+.gift-v530{
+    width:68px;
+    height:28px;
+    font-size: 12px;
+    color: #3399ff;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    vertical-align: middle;
+    line-height: 28px;
+    text-align: center;
+}
+
+

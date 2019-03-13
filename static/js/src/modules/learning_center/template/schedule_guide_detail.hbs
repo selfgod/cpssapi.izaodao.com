@@ -1,0 +1,123 @@
+<div class="cpss_help pt30">
+            <span class="cpss_help_icon"><img src="../static/image/learning_center/cpss_help_icon.png" alt=""></span>
+            <p class="fz16 color_333 taC mt30">你已成功加入“<b class="fwB">{{Schedule_info.name}}</b>”，成为该班级成员啦！</p>
+            <p class="fz14 color_ff4a4a taC mt10">开始上课前，请务必仔细阅读该指南，了解课前准备及课程安排</p>
+            <div class="cpss_help_text mt80 clearfix">
+                <h1 class="cpss_help_h1">
+                    <p class="cpss_help_line"><i>1</i>了解课程安排</p>
+                </h1>
+                <div class="cpss_text_left flL pt15 w430">
+                    <p>开课日期：{{Schedule_info.start_time}}</p>
+                    <p>上课时间：每周{{schedule_week_cycle}} {{Schedule_info.time}}</p>
+                    <p class="color_ff4a4a">开课起，每次课前半小时在微信推送上课提醒通知</p>
+                    <p>结课日期：{{Schedule_info.end_time}}</p>
+                    <p>授课安排：{{Schedule_info.target}}</p>
+                </div>
+                <div class="cpss_text_right mt20 flR">
+                    <p class="code_text flL mr05">扫一扫关注“早道网校”公众号（ID : zaodaojiaoyu）获取上课提醒</p>
+                    <span class="flL"><img src="../static/image/learning_center/cpss_help_img_04.png" alt=""></span>
+                </div>
+            </div>
+
+            <div class="cpss_help_text mt50 clearfix">
+                <h1 class="cpss_help_h1">
+                    <p class="cpss_help_line w135"><i>2</i>加入班级QQ群</p>
+                </h1>
+                <div class="cpss_text_left flL pt15">
+                    {{#if Schedule_info.have_group}}
+                        <p>QQ群是和老师、同学交流的平台，</p>
+                        <p>QQ群也是发布班级重要消息的平台，赶快点击加入吧！</p>
+                        <p class="color_999">老师会在周一至周五 8:30-17:30 处理入群申请，请耐心等待哦~</p>
+                    {{else }}
+                        <p>该班级还未公布QQ群号，请耐心等待哦~</p>
+                    {{/if }}
+                </div>
+                {{#if Schedule_info.have_group}}
+                    <a href="javascript:void(0);" id="qq_group_num" data-clipboard-text="{{Schedule_info.qq_group}}" class="qq_qun mt20 flR qq_group">{{Schedule_info.qq_group}}</a>
+                {{/if }}
+            </div>
+
+            <div class="cpss_help_text mt50 clearfix">
+                <h1 class="cpss_help_h1">
+                    <p class="cpss_help_line"><i>3</i>了解使用教材</p>
+                </h1>
+                {{#if have_text_books}}
+                    <div class="cpss_text_left flL pt15">
+                        <p>纸质版教材需要自行购买</p>
+                        <p>电子版教材提供免费下载</p>
+                    </div>
+                    <div class="cpss_text_left flR pt15 taR">
+                    {{#each schedule_text_books}}
+                    {{#if_cond @index '>' 0}}
+                        <span class="block mt20">
+                            <p class="color_999 fz14 disIb mr05">{{name}}</p>
+                            <a href="/#myCourse?id={{../schedule_id}}&cate=datum" class="cpss_help_btn_line disIb mr05">下载电子教材</a>
+                            <a href="{{#if buy_link }} {{buy_link}} {{else}} javascript:void(0); {{/if}}" target="_blank" class="{{#if buy_link }} cpss_help_btn_bg {{else}} cpss_help_btn_hui {{/if}} disIb">购买纸质教材</a>
+                        </span>
+                    {{else}}
+                        <span class="block">
+                            <p class="color_999 fz14 disIb mr05">{{name}}</p>
+                            <a href="/#myCourse?id={{../schedule_id}}&cate=datum" class="cpss_help_btn_line disIb mr05">下载电子教材</a>
+                            <a href="{{#if buy_link }} {{buy_link}} {{else}} javascript:void(0); {{/if}}" target="_blank" class="{{#if buy_link}} cpss_help_btn_bg {{else}} cpss_help_btn_hui {{/if}} disIb">购买纸质教材</a>
+                        </span>
+                    {{/if_cond }}
+                    {{/each}}
+                {{else}}
+                    <div class="cpss_text_left flL pt15">
+                        <p>本班级不需要学员准备教材，跟着老师上课就好啦！</p>
+                    </div>
+                {{/if }}
+                </div>
+            </div>
+
+            <div class="cpss_help_text mt50 clearfix">
+                <h1 class="cpss_help_h1">
+                    <p class="cpss_help_line"><i>4</i>安装上课软件</p>
+                </h1>
+                <div class="cpss_text_left flL pt15">
+                    <p>早道网校提供全程真人直播教学，上课前，请务必 <a href="http://service.izaodao.com/download.do?appId=7b198387d5714e75894500a14ec5ac5e&platform=1" target="_blank" class="color_3399ff">安装直播上课软件</a> 哦~</p>
+                    <p>早道网校支持电脑上课、手机端上课；</p>
+                </div>
+                <a href="http://service.izaodao.com/download.do?appId=7b198387d5714e75894500a14ec5ac5e&platform=1" target="_blank" class="cpss_help_btn_line pl15 pr15 mt15 flR">去下载</a>
+            </div>
+
+            <div class="cpss_help_text mt50 clearfix">
+                <h1 class="cpss_help_h1">
+                    <p class="cpss_help_line"><i>5</i>熟知如何上课</p>
+                </h1>
+                <div class="cpss_text_left flL pt15">
+                    <p class="fz16 fwB">电脑端上课流程</p>
+                    <p>登录早道网校日语站学习中心——学习主页——直播课表，在上课时<br>间，点击“进入教室”，即可开始学习；</p>
+                    <span class="mt15 block"><img src="../static/image/learning_center/cpss_help_img_02.png" alt=""></span>
+                </div>
+                <div class="cpss_text_left flR pt15">
+                    <p class="fz16 fwB">手机端上课流程</p>
+                    <p>安装“早道网校”APP——登录后查看“课程表<br>在上课时间，点击“进入教室”，即可开始学习；</p>
+                    <span class="mt15 block"><img src="../static/image/learning_center/cpss_help_img_03.png" alt=""></span>
+                </div>
+            </div>
+
+            <div class="cpss_help_text mt50 pb50 boB_e5e5e5 clearfix">
+                <h1 class="cpss_help_h1">
+                    <p class="cpss_help_line w220"><i>6</i>99%的学员都会问到的问题</p>
+                </h1>
+                <div class="cpss_text_left flL pt15">
+                    <p class="color_333">1、错过直播课，怎么办？</p>
+                    <p class="color_666">直播课后我们会提供录播课件，你可以通过回顾录播课件补课。</p>
+                    <p class="color_333 mt30">2、在哪里查看录播课件？</p>
+                    <p class="color_666">1）电脑端：学习中心——我的课程——查看录播课</p>
+                    <p class="color_666">2）手机端：打开早道网校app——我的课程——查看相应课程</p>
+                    <p class="color_333 mt30">3、直播课结束后，录播课件什么时候上传？</p>
+                    <p class="color_666">一般会在直播课后48小时内上传录播课</p>
+                    <p class="color_333 mt30">4、跟不上课程了，怎么办？</p>
+                    <p class="color_666">建议通过查看录播课件进行补课学习。或者删除当前班级，选择新的班级进行重学。</p>
+                    <p class="color_333 mt30">5、如何删除当前班级？</p>
+                    <p class="color_666">电脑端：学习中心——我的课程——选中要删除的班级，点击删除按钮，即可删除。</p>
+                    <p class="color_333 mt30">6、遇到学习问题不会，怎么办？</p>
+                    <p class="color_666">电脑端：学习中心——我要提问——进入早知道提问，每天都会有老师给大家及时解决问题哦</p>
+                    <p class="color_333 mt30">7、遇到系统操作有问题，怎么办？</p>
+                    <p class="color_666">电脑端：网页右侧在线咨询，在线咨询时间9:00-23:00</p>
+                </div>
+            </div>
+            <a href="/#myCourse?id={{schedule_id}}&cate=learn" class="cpss_help_btn_bg cpss_help_timetable">查看课程</a>
+        </div>

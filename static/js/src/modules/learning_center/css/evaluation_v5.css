@@ -1,0 +1,532 @@
+@charset "utf-8";
+/**************************************************************************
+ evaluation_v5.css
+ *************************************************************************/
+.evaluation_top_v5{
+    width:898px;
+    height:118px;
+    border: 1px solid #e5e5e5;
+    background-color: #fdfdfd;
+}
+
+i.icon_tips{
+    width:15px;
+    height:41px;
+    line-height: 50px;
+    font-family: Arial;
+    font-size: 11px;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    font-style: normal;
+    left: 0px;
+    top:-1px;
+    background: url("img/myclassv222_borIcon.png") no-repeat;
+}
+
+.evaluation_top_left_v5 h3{
+    font-size: 18px;
+    color: #3bac57;
+    font-weight: normal;
+    margin-top: 15px;
+    line-height: 40px;
+}
+
+.evaluation_top_left_v5{
+    width:640px;
+    float: left;
+    margin-left:40px;
+}
+
+.evaluation_top_right_v5{
+    width:200px;
+    float: left;
+    margin-top: 20px;
+}
+
+.level_v5{
+    width:80px;
+    height:80px;
+    font-size:50px;
+    color: #42b05d;
+    display: block;
+    text-align: center;
+    font-family: Tahoma;
+    line-height: 75px;
+    position: relative;
+    background: url("img/level_bg_v5.png") no-repeat;
+}
+
+.level_v5 b{
+    font-size: 20px;
+    position: absolute;
+    top: -15px;
+}
+
+.evaluation_main_top_v5{
+    width: 560px;
+    height: 102px;
+    margin-top: 30px;
+    position: relative;
+    padding: 20px 300px 0px 40px;
+    background: url("img/evaluation_main_top_v5.png") no-repeat;
+}
+
+.evaluation_main_top_v5 h4{
+    width:600px;
+    font-size: 24px;
+    font-weight: normal;
+    color: #3bac57;
+}
+
+.evaluation_main_star_finish_v5,
+.evaluation_main_star_unfinish_v5{
+    width:20px;
+    height:19px;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+
+.evaluation_main_star_finish_v5{
+    background: url("img/myclassv222_star.png") no-repeat 0px 0px;
+}
+
+.evaluation_main_star_finish_v5:hover{
+    background: url("img/myclassv222_star.png") no-repeat 0px -38px;
+}
+
+.evaluation_main_star_unfinish_v5{
+    background: url("img/myclassv222_star.png") no-repeat 0px -19px;
+}
+
+.evaluation_main_star_unfinish_v5:hover{
+    background: url("img/myclassv222_star.png") no-repeat 0px -57px;
+}
+
+.evaluation_main_star_v5{
+    float: left;
+    margin: 12px 0px 0px 15px;
+}
+
+.evaluation_button_v5{
+    width:210px;
+    height:50px;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+}
+
+.hover_bg {
+    cursor: pointer;
+    display: block;
+    background-color: #fff;
+}
+
+.hover_bg:hover{
+    background: #4bb866 url("img/myclassv222_hover_Bg.png") repeat-x;
+    color: #fff;
+    cursor:pointer;
+}
+
+.hover_bg:hover i{
+    display: none;
+}
+
+.hover_bg_on{
+    display: block;
+    color: #888 !important;
+}
+
+.hover_bg_on i{
+    display: none;
+}
+
+.myclassv222_row_right{
+    position: absolute;
+    right: 58px;
+    top: 0px
+}
+
+.myclassv222_textR{
+    font-size: 16px;
+    color: #ff6e1f;
+}
+
+.evaluation_main_list_v5{
+    width:898px;
+    min-height: 400px;
+    margin-bottom: 20px;
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #fdfdfd;
+}
+
+.evaluation_main_list_v5 ul{
+    margin: 0px 0px 0px 15px;
+    border-bottom: 1px dotted #4bb866;
+}
+
+.evaluation_main_list_v5 li{
+    font-size: 16px;
+    float: left;
+    position: relative;
+    cursor: pointer;
+    padding: 15px 0px 20px 25px;
+}
+
+.myclassv222_left_listIcon_starOv,
+.myclassv222_left_listIcon_starOff{
+    width:18px;
+    height:17px;
+    float: left;
+    margin: 1px 0px 0px 5px;
+    background: url("img/start.png") no-repeat 0px top;
+}
+
+.myclassv222_left_listIcon_starOv{
+    background: url("img/start.png") no-repeat 0px top;
+}
+
+.myclassv222_left_listIcon_starOff{
+    background: url("img/start.png") no-repeat 0px bottom;
+}
+
+/**************************************************************************************
+ 弹出层
+ ***************************************************************************************/
+
+.myclassv222_alert_w800,
+.myclassv222_alert{
+    position: fixed;
+    left: 50%;
+    top:50%;
+    z-index: 888888;
+    background-color: #fff;
+    font-size: 16px;
+    color: #333333;
+    /*display: none;*/
+}
+
+.myclassv222_alert{
+    width:514px;
+    height:260px;
+    margin: -130px 0px 0px -257px;
+}
+
+.myclassv222_alert_w800{
+    width:800px;
+    height:480px;
+    margin: -300px 0px 0px -400px;
+}
+
+.myclassv222_alert_title,
+.myclassv222_alert_title_w800{
+    height:50px;
+    color: #fff;
+    font-size: 18px;
+    padding-left: 60px;
+    line-height: 50px;
+    background: #ff6e1f url("img/myclassv222_alert.png") no-repeat 20px 10px;
+}
+
+.myclassv222_alert_title {
+    width: 454px;
+}
+
+.myclassv222_alert_title_w800 {
+    width: 740px;
+}
+
+.myclassv200_dialog{
+    width:100%;
+    height:100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 9999;
+    /*display: none;*/
+    background-color: #000;
+    filter:alpha(opacity=50);
+    -moz-opacity:0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+}
+
+.myclassv222_close{
+    width:14px;
+    height:14px;
+    top: 18px;
+    right: 20px;
+    z-index: 9999999;
+    position: absolute;
+    cursor: pointer;
+    background: url("img/myclassv222_close.png") no-repeat 0px top;
+}
+
+.myclassv222_close:hover{
+    background: url("img/myclassv222_close.png") no-repeat 0px bottom;
+}
+
+a.myclassv222_href{
+    width:200px;
+    font-size: 14px;
+    color: #e3885a;
+    text-align: center;
+    display: block;
+    margin: auto;
+    text-decoration: underline;
+}
+
+.myclassv222_alert_button{
+    width:180px;
+    height:40px;
+    color: #fff;
+    border-radius: 3px;
+    margin:22px auto 0px auto;
+    line-height: 40px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #ff6e1f;
+}
+
+.myclassv222_form{
+    width:670px;
+    margin: auto;
+}
+
+.myclassv222_form li{
+    line-height: 38px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.myclassv222_form li b{
+    display: block;
+    font-size: 14px;
+    color: #888888;
+    left: 160px;
+    bottom: -32px;
+    position: absolute;
+}
+
+.myclassv222_form_input{
+    width:340px;
+    height:28px;
+    border-radius: 2px;
+    font-size: 16px;
+    color: #444444;
+    padding: 5px;
+    border: 1px solid #a1a2a3;
+}
+
+.myclassv222_form_input{
+    width:340px;
+    height:28px;
+    border-radius: 2px;
+    font-size: 16px;
+    color: #444444;
+    padding: 5px;
+    border: 1px solid #a1a2a3;
+}
+
+.myclassv222_date{
+    width:342px;
+    height:36px;
+    color: #666666;
+    border-radius: 3px;
+    padding: 0px 0px 0px 6px;
+    border: 1px solid #a1a2a3;
+}
+
+.myclassv222_date_main{
+    width:764px;
+    height: 480px;
+    border: 1px solid #bfbfbf;
+    border-radius: 2px;
+    position: absolute;
+    z-index: 99999999;
+    left: 50%;
+    top: 50%;
+    /*display: none;*/
+    padding: 10px 18px 18px 18px;
+    margin: -340px 0px 0px -400px;
+    background-color: #efefef;
+    -webkit-box-shadow:0px 0px 5px #e1e0e0;
+    -moz-box-shadow:0px 0px 5px #e1e0e0;
+    box-shadow:0px 0px 5px #e1e0e0;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;
+}
+
+.myclassv222_date_title{
+    font-size: 16px;
+    color: #666666;
+}
+
+.myclassv222_date_close{
+    margin-bottom: 15px;
+    cursor:pointer;
+}
+
+.myclassv222_date_list{
+    width:760px;
+    height:425px;
+    border-radius: 3px;
+    border: 1px solid #bfbfbf;
+    background-color: #ffffff;
+}
+
+.myclassv222_date_list_title{
+    width: 680px;
+    height:70px;
+    line-height: 70px;
+    font-size: 18px;
+    padding: 0px 41px;
+    text-align: center;
+    border-bottom: 1px solid #dedede;
+}
+
+.myclassv222_date_list_titleL,
+.myclassv222_date_list_titleR{
+    width:30px;
+    height:30px;
+    line-height: 28px;
+    color: #888888;
+    margin: 20px 0px;
+}
+
+.myclassv222_date_list_titleL:hover,
+.myclassv222_date_list_titleR:hover{
+    background-color: #efefef;
+}
+
+.myclassv222_date_list_titleC{
+    width:620px;
+    color: #666666;
+}
+
+.myclassv222_date_week{
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;
+}
+
+.myclassv222_date_day{
+    height: 290px;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;
+}
+
+.myclassv222_date_week ul,
+.myclassv222_date_day ul{
+    /*width:658px;*/
+    margin: 0px 41px;
+}
+
+.myclassv222_date_week li{
+    color: #aaaaaa;
+}
+
+.myclassv222_date_week li,
+.myclassv222_date_day li{
+    width:30px;
+    height:30px;
+    float: left;
+    line-height: 28px;
+    text-align: center;
+    margin: 0px 78px 15px 0px;
+    cursor:pointer;
+}
+
+.myclassv222_date_day li:hover{
+    background-color: #efefef;
+}
+
+.myclassv222_date_day li.hover_none:hover{
+    background-color: #fff !important;
+}
+
+#myclassv222_date{
+    /*display: none;*/
+}
+
+.myclassv222_day_list_title{
+    width: 760px;
+    height:70px;
+    line-height: 70px;
+    font-size: 18px;
+    text-align: center;
+    border-bottom: 1px solid #dedede;
+}
+
+.myclassv222_day_titleL,
+.myclassv222_day_titleR{
+    width:90px;
+    height:30px;
+    line-height: 28px;
+    color: #888888;
+    margin: 20px 0px;
+    font-size: 16px;
+    cursor:pointer;
+}
+
+.myclassv222_day_titleC{
+    width:578px;
+    color: #666666;
+}
+
+.myclassv222_day_week{
+    width:100%;
+    height: 354px;
+    overflow-y:scroll;
+    overflow-x:scroll;
+}
+
+.table_list{
+    width: 900px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    background-color: #f5f5f5;
+}
+
+.table_list thead td{
+    /*height:40px;
+    line-height: 40px;*/
+    text-align: center;
+    border-right: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    cursor: text;
+    background-color: #ffffff;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.table_list thead td{
+    color: #666666;
+}
+
+.table_list tbody td{
+    font-size: 14px;
+    color: #4bb866;
+    position: relative;
+    /*height:40px;
+    line-height: 40px;*/
+    text-align: center;
+    border-right: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    cursor: text;
+}
+
+.table_list tbody td i{
+    position: absolute;
+    right: 0px;
+    bottom: -30px;
+}

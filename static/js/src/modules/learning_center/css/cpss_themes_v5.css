@@ -1,0 +1,229 @@
+@charset "UTF-8";
+/**************************************************************************
+ cpss_themes_v5.css
+ *************************************************************************/
+.cpss_leave_main{
+    width:350px;
+    margin: 0px auto;
+    padding-top: 20%;
+    text-align: center;
+}
+
+.cpss_tips_text{
+    width:898px;
+    height:58px;
+    border: 1px solid #d2e8cb;
+    background-color: #fafaf1;
+    border-radius: 2px;
+    margin: 0px auto 20px auto;
+    line-height:58px;
+    color: #999999;
+    font-size: 13px;
+}
+
+.cpss_classTab{
+    width:878px;
+    height:41px;
+    text-align: center;
+    position: relative;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.cpss_classTab li{
+    width:87px;
+    height:41px;
+    float: left;
+    font-size: 15px;
+    color: #999999;
+    border: 1px solid #e5e5e5;
+    border-bottom:none;
+    line-height:40px;
+    position: absolute;
+    cursor: pointer;
+}
+.cpss_classTab_current{
+    height:39px !important;
+    position: absolute;
+    z-index: 999;
+    line-height: 37px !important;
+    color: #4bb866 !important;
+    border-top:3px solid #4bb866 !important;
+    background-color: #fff;
+    cursor: auto !important;
+}
+
+.cpss_class_list01,
+.cpss_class_list02,
+.cpss_class_list03,
+.cpss_major,
+.cpss_speaking,
+.cpss_minors,
+.cpss_specialize,
+.cpss_customize,
+.cpss_syllabus{
+    display: none;
+}
+
+.cpss_section_title{
+    width:811px;
+    margin: auto;
+    padding: 20px 0px 10px 9px;
+}
+
+.cpss_section_title li{
+    width: 100px;
+    height:20px;
+    color: #666666;
+    display: inline-block;
+    line-height: 18px;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid #e5e5e5;
+    border-radius: 20px;
+    margin: 0px 10px 10px 0px;
+    padding: 0px 5px;
+}
+
+.cpss_section_title li.checked{
+    color: #fff;
+    border: 1px solid #4bb866;
+    background-color: #4bb866;
+}
+
+.cpss_class_list{
+    width:898px;
+    min-height: 600px;
+    border-radius: 2px;
+    border:1px solid #e5e5e5;
+    margin: auto;
+    position: relative;
+}
+
+.cpss_class_list li{
+    height:149px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.cpss_class_list li.cpss_class_title{
+    height:50px;
+    line-height: 50px;
+    background-color: #fafafa;
+    font-size: 0px;
+}
+
+.cpss_class_list li.cpss_class_title p{
+    color: #999999;
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+}
+
+.cpss_cancel_text{
+    position: absolute;
+    margin-top: 40px;
+    right: 0;
+    font-size: 14px;
+    color: #999;
+    cursor: pointer;
+}
+
+
+.cpss_state{
+    width:70px;
+    float: left;
+    text-align: center;
+}
+
+.cpss_state i{
+    width:50px;
+    height:50px;
+    display: block;
+    margin: 45px auto;
+}
+
+/****************************************************************************
+ 主修课 学习计划
+*****************************************************************************/
+.cpss_plan{
+    text-align: center;
+}
+
+h1.cpss_plan_title{
+    text-align: center;
+    font-size: 32px;
+    color: #444444;
+    padding: 65px 0px 70px 0px;
+}
+
+.cpss_plan a.cpss_plan_list{
+    width:275px;
+    display:inline-block;
+    zoom: 1;
+    *display: inline;
+    border: 2px solid #3399ff;
+    border-radius: 10px;
+    color: #3399ff;
+    font-size: 0px;
+    padding: 44px 0px 32px 0px;
+}
+
+.cpss_plan a.cpss_plan_list p{
+    font-size: 20px;
+}
+
+.cpss_plan a.cpss_plan_list i.cpss_plan_interest{
+    width:70px;
+    height:65px;
+    margin: auto;
+    display: block;
+    background: url("img/plan_interest.png") no-repeat;
+    background-position: center 0px;
+}
+
+.cpss_plan a.cpss_plan_list i.cpss_plan_exam{
+    width:51px;
+    height:65px;
+    margin: auto;
+    display: block;
+    background: url("img/plan_exam.png") no-repeat;
+    background-position: center 0px;
+}
+
+.cpss_plan a.cpss_plan_list:hover{
+    background-color: #3399ff;
+    color: #fff;
+}
+
+.cpss_plan a.cpss_plan_list:hover i{
+    background-position: center bottom;
+}
+/****************************************************************************
+ 定制课
+*****************************************************************************/
+
+.cpss_customize_text{
+    width:890px;
+    height:530px;
+    margin: auto;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 135px;
+}
+
+/****************************************************************************
+ 选修课 -- 没有课程
+*****************************************************************************/
+.cpss_nolesson{
+    width:818px;
+    min-height:320px;
+    margin: auto;
+    text-align: center;
+    padding-top: 135px;
+}
+
+.cpss_nolesson p{
+    font-size: 16px;
+    color: #666666;
+}
+

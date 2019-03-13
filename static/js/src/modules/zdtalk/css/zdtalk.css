@@ -1,0 +1,39 @@
+.cpss_full_container {
+    position: relative;
+    margin-top: 83px;
+    width: 100%;
+}
+.cpss_fix_container {
+    margin: 400px auto 0;
+    padding-top: 1px;
+    width: 540px;
+}
+.cpss_fix_container p {
+    margin-bottom: 15px;
+    padding-left: 80px;
+    font-size: 14px;
+    color: #666;
+}
+.cpss_fix_container p a {
+    color: #39f;
+    cursor: pointer;
+}
+.cpss_fix_container .cpss_fix_row {
+    margin-bottom: 30px;
+    height: 60px;
+    line-height: 60px;
+    background: url("../img/cpss_fix.png") no-repeat left;
+    font-size: 18px;
+    color: #333;
+}
+.cpss_fix_container .cpss_fix_btn {
+    position: relative;
+    top: 10px;
+    display: inline-block;
+    width: 110px;
+    height: 30px;
+    background: url("../img/cpss_qq.png") no-repeat;
+}
+.cpss_fix_container .cpss_fix_btn:hover {
+    background: url("../img/cpss_qq_hover.png") no-repeat;
+}

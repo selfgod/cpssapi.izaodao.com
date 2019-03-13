@@ -1,0 +1,41 @@
+<div class="cpss_exercise">
+    <div class="cpss_classlearn">
+        <ul>
+        {{#each list}}
+            <li>
+                <div class="ul_list_container {{#if @first}}borT_f8f8f8{{/if}}">
+                <span class="cpss_classlearn_honor taR">
+                    {{#if current_finish}}
+                        {{#if_cond score '>' 0}}
+                        <p>+{{score}}</p>
+                        {{/if_cond}}
+                    {{/if}}
+                    <i class="{{#if finish}}cpss_icon_medal_ov{{else}}cpss_icon_medal_off{{/if}}"></i>
+                </span>
+                <p class="cpss_classlearn_catalog"><b>{{index}} -</b>{{name}}</p>
+                <p class="cpss_classlearn_techer">{{#if_eq type 'test'}}一课一练{{else}}单元测试{{/if_eq}}</p>
+                <div class="cpss_classlearn_operate">
+                    {{#if already_did}}
+                        {{#if_eq type 'test'}}
+                            <a href="javascript:;" data-url="{{../testPrefix}}schedule_id={{../scheduleId}}&plan_id={{../planId}}&plan_stage_id={{../planStageId}}&tp=1&tid={{id}}&schedule_lesson_id={{lesson_id}}&act=retest" class="color_3399ff fz12 mr15 exec testRedo google_event" ga-type="点击做题_重做" ga-title="{{name}}">
+                                <i class="cpss_icon_reform"></i>重做</a>
+                            <a href="{{../testPrefix}}schedule_id={{../scheduleId}}&plan_id={{../planId}}&plan_stage_id={{../planStageId}}&tp=1&tid={{id}}&schedule_lesson_id={{lesson_id}}" class="cpss_small_btn google_event" target="_blank" ga-type="点击做题_回顾" ga-title="{{name}}">回 顾</a>
+                        {{else}}
+                            <a href="javascript:;" data-url="/exam/unitTest/prepare/{{id}}?schedule_id={{../scheduleId}}&lesson_id={{lesson_id}}" class="color_3399ff fz12 mr15 exec retest google_event" ga-type="点击做题_重做" ga-title="{{name}}">
+                                <i class="cpss_icon_reform"></i>重做</a>
+                            <a href="/exam/unitTest/review?paper_id={{id}}" class="cpss_small_btn google_event" target="_blank" ga-type="点击做题_回顾" ga-title="{{name}}">回 顾</a>
+                        {{/if_eq}}
+                    {{else}}
+                        {{#if_eq type 'test'}}
+                            <a href="javascript:;" data-url="{{../testPrefix}}schedule_id={{../scheduleId}}&plan_id={{../planId}}&plan_stage_id={{../planStageId}}&tp=1&tid={{id}}&schedule_lesson_id={{lesson_id}}" class="cpss_small_btn blue exec google_event" ga-type="点击做题_做题" ga-title="{{name}}">做 题</a>
+                        {{else}}
+                            <a href="javascript:;" data-url="/exam/unitTest/prepare/{{id}}?schedule_id={{../scheduleId}}&lesson_id={{lesson_id}}" class="cpss_small_btn google_event blue exec {{#if over_30min}}over_30min{{/if}} {{#if unit_notstart}}not_start{{/if}}" {{#if unit_notstart}}data-start_time="{{unit_start_time}}"{{/if}} ga-type="点击做题_做题" ga-title="{{name}}">做 题</a>
+                        {{/if_eq}}
+                    {{/if}}
+                </div>
+                </div>
+            </li>
+        {{/each}}
+        </ul>
+    </div>
+</div>

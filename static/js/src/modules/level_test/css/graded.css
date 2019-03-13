@@ -1,0 +1,394 @@
+/* CSS Document */
+body{
+    background-color: #fff !important;
+}
+.banner{
+    width: 100%;
+    height:500px;
+    overflow: hidden;
+    position: relative;
+    background: url(./img/graded/banner_bg.png) no-repeat center;
+}
+
+.banner_auto{
+    width:1080px;
+    height:455px;
+    margin: auto;
+    padding-top: 45px;
+    position: relative;
+    z-index: 100;
+}
+
+.banner_rotation{
+    width:1200px;
+    height:1200px;
+    position: absolute;
+    left: 50%;
+    top:-330px;
+    margin-left:-600px;
+    z-index: 10;
+    background: url("./img/graded/animation_bg.png") no-repeat 0px 0px;
+}
+
+.banner_star{
+    width:980px;
+    height:420px;
+    position: absolute;
+    left: 50%;
+    top:0px;
+    z-index: 12;
+    margin-left: -490px;
+}
+
+.banner_star i.srar-01{
+    display: block;
+    margin:30px 0px 0px 140px;
+}
+
+.banner_star i.srar-02{
+    display: block;
+    margin:150px 0px 0px 240px;
+}
+
+.banner_star i.srar-04{
+    display: block;
+    margin:20px 0px 0px 10px;
+}
+
+.banner_star i.srar-05{
+    display: block;
+    margin:80px 0px 0px 0px;
+}
+
+.banner_star i.srar-06{
+    display: block;
+    margin:80px 0px 0px 5px;
+}
+
+.mr140{ margin-right: 140px !important;}
+
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale3d(.3, .3, .3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+.zoomIn {
+    animation-name: zoomIn;
+}
+
+.grade_card{
+    width:340px;
+    height: 416px;
+    margin: 0px auto;
+    z-index: 9;
+    background: url(./img/graded/grade_card_bg.png) no-repeat;
+}
+
+.grade_card p{
+    color: #fff;
+}
+
+.class_big_icon{
+    width:170px;
+    text-align: center;
+    display: block;
+    margin: 0px auto 40px auto;
+    padding-top: 22px;
+}
+
+a.grade_btn_history{
+    width:106px;
+    height:28px;
+    color: #3399ff;
+    line-height: 28px;
+    border-radius: 3px;
+    padding-left: 32px;
+    font-size: 12px;
+    display: block;
+    position: absolute;
+    right: 60px;
+    bottom: 0px;
+    border: 1px solid #3399ff;
+    background: url(./img/graded/grade_btn_history_icon.png) no-repeat 9px 5px;
+}
+
+a.grade_btn_history:hover{
+    background: #f2f8ff url(./img/graded/grade_btn_history_icon.png) no-repeat 9px 5px;
+}
+
+.contant{
+    width:980px;
+    margin: auto;
+}
+
+.contant h1.grade_text{
+    width:170px;
+    height:50px;
+    margin: 40px auto;
+    font-size: 22px;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    font-weight: normal;
+    background: url(./img/graded/h1_bg.png) no-repeat;
+}
+
+.contant_text{
+    width:398px;
+    height:275px;
+    padding: 40px 35px 100px 35px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    position: relative;
+    border: 1px solid #e5e5e5;
+}
+
+.contant_text h2.grade_text{
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+}
+
+p.suggest_text{
+    width:370px;
+    min-height:150px;
+    margin: 0px auto 20px auto;
+    padding: 15px;
+    font-size: 14px;
+    color: #666;
+    line-height: 23px;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+}
+
+a.infoLevel_btn_01,
+a.infoLevel_btn_02,
+a.infoLevel_btn_03{
+    width:102px;
+    height:38px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 38px;
+    display: block;
+    left: 50%;
+    bottom:40px;
+    border-radius: 5px;
+    position: absolute;
+    margin-left: -51px;
+}
+
+ul.level_list{
+    padding-top: 40px;
+}
+
+ul.level_list li{
+    float: left;
+    position: relative;
+    margin: 0px 40px 40px 0px;
+    overflow: hidden;
+}
+
+ul.level_list li .level_bg{
+    width:300px;
+    height:245px;
+    text-align: center;
+    padding-top: 55px;
+    border-radius: 10px;
+}
+
+ul.level_list li .level_bg p{
+    font-size: 14px;
+    color: #ff7e00;
+    margin-top: 23px;
+}
+
+ul.level_list li .level_list_off{
+    width:228px;
+    height: 230px;
+    padding: 38px 35px 30px 35px;
+    border-radius: 10px;
+    background-color: #FFF;
+    border: 1px solid #e5e5e5;
+    position: absolute;
+    left:0px;
+    bottom:-300px;
+    filter:alpha(opacity=90);
+    -moz-opacity:0.9;
+    -khtml-opacity: 0.9;
+    opacity: 0.9;
+}
+ul.level_list li .level_list_off p.level_text_v530{
+    min-height:200px;
+    text-align:justify;
+    text-justify:inter-ideograph;
+}
+
+ul.level_list li .level_list_off p{
+    font-size: 14px;
+    color: #666;
+    line-height: 24px;
+}
+
+a.toText{
+    width:58px;
+    height:28px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 28px;
+    color: #3399ff;
+    border: 1px solid #3399ff;
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom:15px;
+    border-radius: 3px;
+    margin-left:-30px;
+}
+
+.graded-test-box{
+    width:776px;
+    padding: 45px 100px;
+    border-radius: 10px;
+    border: 2px solid #3399ff;
+}
+
+.graded-test-box-img{
+    float: left;
+    width:170px;
+    height:185px;
+}
+
+.graded-test-box-text{
+    width:560px;
+    float: right;
+}
+
+a.basics-btn{
+    width:104px;
+    height:40px;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    display: inline-block;
+}
+
+.level_v530{
+    min-height: 1000px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 弹出层 */
+.grade_alert{
+    width:385px;
+    margin: 25px auto 0px auto;
+    background-color: #fff;
+}
+
+a.grade_alert_btn{
+    display: block;
+    margin: 10px auto 0px auto;
+    padding: 0;
+    width: 68px;
+    height: 28px;
+    line-height: 28px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: 0;
+    font-size: 12px;
+    text-align: center;
+    font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border: 1px solid #39f;
+    color: #39f;
+    background-color: #fff;
+}
+
+a.grade_alert_btn:hover{
+    border: 1px solid #39f;
+    color: #fff;
+    background-color: #39f;
+}
+
+.grade_form{
+    margin-top: 5px;
+}
+
+.grade_form textarea{
+    width:288px;
+    height:58px;
+    vertical-align: top;
+    border: 1px solid #ddd;
+    font-size: 12px;
+    color: #aaa;
+    padding: 10px;
+    resize:none;
+    font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.grade_form p.grade_form_title{
+    font-size: 14px;
+    color: #666;
+    float: left;
+}
+
+.grade_form select {
+    width: 188px;
+    height: 34px;
+    padding-left: 10px;
+    border: 1px solid #ddd;
+}
+
+body .izaodao5 .layui-layer-content p.error_msg,
+body .izaodao5 .layui-layer-content p.error_msg_level{
+    height:24px;
+    line-height: 24px;
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

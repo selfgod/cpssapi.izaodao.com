@@ -1,0 +1,23 @@
+{{#if user_schedule_info}}
+<div id="user_schedule_info">
+    <div class="class-list">
+        <p class="class-list-title">已加入课程列表：</p>
+        <ul class="class-list-row">
+            <li class="clearfix">
+                <p class="w310 taL pl50">班级名</p>
+                <p class="w210">主讲老师</p>
+                <p class="w210">最近一次学习课程</p>
+                <p class="w140">你的课程完成度</p>
+            </li>
+            <li class="clearfix color_666">
+                {{#each user_schedule_info}}
+                    <p class="w360 taL textOverflow">{{name}}</p>
+                    <p class="w210 textOverflow">{{teacher}}</p>
+                    <p title="{{learn_lesson}}" class="w210 textOverflow">{{learn_lesson}}</p>
+                    <p class="w140 textOverflow">{{complete}}</p>
+                {{/each}}
+            </li>
+        </ul>
+    </div>
+</div>
+{{/if}}

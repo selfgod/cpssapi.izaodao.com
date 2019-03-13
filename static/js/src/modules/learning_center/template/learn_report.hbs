@@ -1,0 +1,41 @@
+<div class="learning_report_height">
+    <div class="layout_w240_v5 mt20">
+        <h1 class="tool_title_v5 learn_report">
+            <b class="pb20 current_v5" data-id="my_grade">日语等级</b>
+            <i class="line_v521"></i>
+            <b class="pb20 google_event" ga-type="教师评语" data-id="my_assess">教师评语{{#if_cond browseNum '>' 0}}<em class="note_v521" id="not_browse">{{browseNum}}</em>{{/if_cond}}</b>
+        </h1>
+    <!--日语等级-->
+        <div id="my_grade" class="learning_v521 learn_report_com" style="display:block;">
+        </div>
+<!--old-->
+    <!--<div id="my_score" class="learning_v521 learn_report_com google_event" ga-type="点击我的学分">-->
+        <!--<span class="learning_v5">-->
+            <!--<p class="fz30 mt10 taC">-->
+                <!--<a target="_blank" href="{{score_link}}" class="color_3399ff ffA" ga-title="可用学分">{{study_score}}</a>/<a target="_blank" href="{{score_total_link}}" class="color_666 ffA" ga-title="累计学分">{{study_score_total}}</a>-->
+            <!--</p>-->
+            <!--<p class="fz12 mt10"><b class="color_999">可用学分</b><b class="color_999 ml10">累计学分</b></p>-->
+        <!--</span>-->
+        <!--<a target="_blank" href="{{how_get_score_link}}" class="color_999 fz12 ml50" ga-title="如何得学分">如何得学分？</a>-->
+        <!--<a target="_blank" href="{{shop_link}}" class="shop_v5" ga-title="积分商城">积分商城</a>-->
+    <!--</div>-->
+    <!--教师评语-->
+        <div id="my_assess" data-total="{{commentTotal}}" class="evaluate_v521 learn_report_com" style="display:none;">
+            <div style="width:200px; position:relative; overflow:hidden; padding:0 0 50px 0; margin: auto;">
+                <div class="evaluate_main_v521">
+                    {{#if_cond commentTotal '>' 0}}
+                        <div class="evaluate_list_v521"></div>
+                        <a class="prev_zxf prevStop" href="javascript:void(0)"></a>
+                        <a class="next_zxf nextStop" href="javascript:void(0)"></a>
+                    {{else}}
+                        <p class="taC pt80 color_aaa">暂无教师评语</p>
+                    {{/if_cond}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="layout_w240_v5 mt20 pt20">
+    <p class="credit-v530">可用学分：{{study_score}}</p>
+    <a href="{{shop_link}}" target="_blank" class="fz12 gift-v530 button_line_blue">兑换礼品</a>
+</div>

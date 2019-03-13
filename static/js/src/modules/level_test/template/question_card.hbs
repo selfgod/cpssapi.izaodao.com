@@ -1,0 +1,23 @@
+<div class="scantron_list">
+    <ul>
+        <li>
+            {{#each questions}}
+                {{#each this}}
+                <a href="#q_{{id}}" class="{{#if_eq index 5}}mr00{{/if_eq}} {{#if answer }}current{{/if}}" id="card_{{id}}" >{{index}}</a>
+                {{/each}}
+            {{/each}}
+        </li>
+    </ul>
+</div>
+
+<div class="reform_bottom">
+    <a href="javascript:;" class="continue_btn  {{#if_eq cate lastCate}}submit_page{{else}}taC{{/if_eq}}" data-cate="{{cate}}">
+        {{#if_eq cate 'word'}}
+            继续答文法
+        {{else}}
+            {{#if_eq cate 'grammar'}} 继续答读解{{/if_eq}}
+            {{#if_eq cate 'reading'}}交 卷{{/if_eq}}
+        {{/if_eq}}
+        </a>
+    <!--<a href="#" class="submit_page">交 卷</a>-->
+</div>

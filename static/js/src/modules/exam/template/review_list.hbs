@@ -1,0 +1,59 @@
+{{#each list}}
+    <div class="ykyc_v4_tip">
+        <div class="ykyc_v4_tigan">题干</div>
+        <div class="ykyc_v4_word1">{{{title}}}</div>
+        {{#each questions}}
+            <div id="q_{{question_id}}"></div>
+            <div class="ykyc_v4_word2">
+                <div class="ykyc_v4_num fl">{{index}}</div>
+                <span class="fl">{{{question}}}</span>
+            </div>
+            <div class="ykyc_v4_choose" data-qid="{{question_id}}">
+                <ul>
+                    {{#each option}}
+                        <li class="clearfix">
+                            <input type="radio" id="{{wa_id}}" name="{{../question_id}}" value="{{wa_id}}" {{#if_eq ../answer wa_id}}checked="checked"{{/if_eq}} class="ykyc_v4_radio1 fl" disabled>
+                            <label for="{{wa_id}}" class="ykyc_v4_text1 fl">{{inc @index '+'}}、{{wa_answer}}{{#if_eq wa_id ../right}}<img class="wrong_icon" src="../img/right.png">{{/if_eq}}</label>
+                        </li>
+                    {{/each}}
+                </ul>
+            </div>
+            <div class="exam_v4_why">
+                <ul>
+                    <li><span>参考答案：{{right_index}}</span></li>
+                    <li>
+                        {{#if_eq answer 0}}
+                            <p class="answer_wrong">本题你没有作答</p>
+                        {{else}}
+                            <p class="{{#if_eq answer_index right_index}}answer_right{{else}}answer_wrong{{/if_eq}}">你的答案：{{answer_index}}</p>
+                        {{/if_eq}}
+                    </li>
+                    <li>答对率：{{accuracy}}%</li>
+                    <li>易错选项：{{fallible_opt}}</li>
+                </ul>
+            </div>
+            <div class="c_wrap">
+                <div id="int{{question_id}}" class="int">
+                    {{#if_eq ../../cate 'listening'}}
+                        {{#if analysis}}
+                            <div class="analysis" data-qid="{{question_id}}">解析</div>
+                            <input type="hidden" id="analysis_{{question_id}}" value="{{analysis}}">
+                        {{/if}}
+                        {{#if hearing}}
+                            <div class="hearing" data-qid="{{question_id}}">听力原文</div>
+                            <input type="hidden" id="hearing_{{question_id}}" value="{{hearing}}">
+                        {{/if}}
+                    {{else}}
+                        <div class="on ask-question {{#unless zdknow_id}}popup{{/unless}}" data-topic="{{../tid}}" data-question="{{question_id}}" data-relate_id="{{zdknow_id}}">该题的讨论</div>
+                        {{#if analysis}}
+                            <div class="analysis" data-qid="{{question_id}}">解析</div>
+                            <input type="hidden" id="analysis_{{question_id}}" value="{{analysis}}">
+                        {{/if}}
+                    {{/if_eq}}
+                </div>
+                <div class="clear"></div>
+                <div id="content_{{question_id}}" class="cow"></div>
+            </div>
+        {{/each}}
+    </div>
+{{/each}}

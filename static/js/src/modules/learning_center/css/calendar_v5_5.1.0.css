@@ -1,0 +1,172 @@
+@charset "UTF-8";
+/**************************************************************************
+ calendar_v5_5.1.0.css
+ *************************************************************************/
+
+.calendar_v422{
+    width:234px;
+    position: absolute;
+    border: 1px solid #3399ff;
+    right:0px;
+    top: 58px;
+    padding: 8px;
+    z-index: 999;
+    /*display: none;*/
+    background-color: #fff;
+    border-radius: 5px;
+    border-top-right-radius: 0px;
+    box-shadow: 0 1px 5px 0px #d2d2d2;
+}
+
+.calendar_v422_title{
+    width:232px;
+    height:22px;
+}
+
+.calendar_v422_title span{
+    width:110px;
+    height:22px;
+    line-height: 22px;
+    color: #4bb866;
+    font-size: 14px;
+    text-align: center;
+}
+.calendar_v422_title span p{
+    width: 66px;
+    font-family: Arial;
+    margin-right: 0px;
+    border-radius: 3px;
+    color: #3399ff;
+    background-color: #f5f5f5;
+}
+
+.week_v422{
+    width:231px;
+    margin: auto;
+}
+
+.week_v422 li{
+    width: 33px;
+    height:25px;
+    color: #888888;
+    font-size: 12px;
+    font-family: "宋体";
+    line-height: 25px;
+    float: left;
+    text-align: center;
+}
+
+.number_v422{
+    width:231px;
+    margin: auto;
+    border-left: 1px solid #f0f0f0;
+    border-top: 1px solid #f0f0f0;
+}
+
+.number_v422 li{
+    width: 32px;
+    height: 36px;
+    line-height: 22px;
+    border: 1px solid #f0f0f0;
+    border-left: none;
+    border-top: none;
+    font-size: 14px;
+    font-family: "Georgia";
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    color: #666;
+}
+
+.number_v422 li:hover{
+    background-color: #f5f5f5;
+}
+
+.number_v422 li i{
+    margin: auto;
+    display: block;
+    background: url("img/number_v422_icon.png") no-repeat;
+}
+
+.number_v422 li i.number_v422_right{
+    width:14px;
+    height:12px;
+    background-position: left 0px;
+}
+
+.number_v422 li i.number_v422_right_w{
+    width:14px;
+    height:12px;
+    background-position: left -14px;
+}
+
+.number_v422 li i.number_v422_status{
+    width:12px;
+    height:12px;
+    background-position: left -28px;
+}
+
+.number_v422 li i.number_v422_status_w{
+    width:12px;
+    height:12px;
+    background-position: left -42px;
+}
+
+.number_v422 li i.number_v422_hasClass{
+    width:6px;
+    height:6px;
+    margin-top: 3px;
+    background-position: left -56px;
+}
+
+.number_v422 li.none_v422{
+    color: #bbbbbb;
+}
+
+.number_v422 li.none_v422:hover{
+    background-color: #fff;
+}
+
+.number_v422 li.today_v422{
+    color: #fff;
+    background-color: #3399ff;
+}
+
+.number_v422 li.today_v422:hover{
+    color: #fff;
+    background-color: #3399ff;
+}
+
+.number_v422 li i.number_v422_right{
+    width:14px;
+    height:12px;
+    background-position: left 0px;
+}
+
+.number_v422 li i.number_v422_right_w{
+    width:14px;
+    height:12px;
+    background-position: left -14px;
+}
+
+.number_v422 li i.number_v422_status{
+    width:12px;
+    height:12px;
+    background-position: left -28px;
+}
+
+.number_v422 li i.number_v422_status_w{
+    width:12px;
+    height:12px;
+    background-position: left -42px;
+}
+
+.number_v422 li i.number_v422_hasClass{
+    width:6px;
+    height:6px;
+    margin-top: 3px;
+    background-position: left -56px;
+}
+
+
+
